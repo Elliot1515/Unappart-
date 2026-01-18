@@ -6,7 +6,7 @@ let currentToolIndex = 0;
 let filteredTools = [];
 let themeScores = {};
 let speechEnabled = false;
-let textSize = 1; // Facteur de zoom par défaut (1 = 100%)
+let textSize = 1;
 let currentQuestionIndex = 0;
 
 // --- ÉLÉMENTS DOM ---
@@ -21,7 +21,6 @@ const toggleSpeechButton = document.getElementById("toggleSpeech");
 const increaseTextButton = document.getElementById("increaseText");
 const decreaseTextButton = document.getElementById("decreaseText");
 
-// Éléments Quiz
 const quizQuestion = document.getElementById("quizQuestion");
 const quizOptions = document.getElementById("quizOptions");
 const quizQuestionNumber = document.getElementById("quizQuestionNumber");
@@ -30,7 +29,8 @@ const quizProgressFill = document.getElementById("quizProgressFill");
 // --- CHARGEMENT DES DONNÉES ---
 async function loadAppData() {
   try {
-    const response = await fetch("http://localhost:3000/api/data");
+    // MODIFICATION IMPORTANTE : Lien relatif
+    const response = await fetch("/api/data");
     const data = await response.json();
 
     appToolsData = data.toolsData || {};
@@ -42,15 +42,13 @@ async function loadAppData() {
 
     updateThemeCards();
     updateSpeechIcon();
-
-    // Applique la taille par défaut au chargement
     updateTextScale();
   } catch (error) {
-    console.error("Erreur API :", error);
+    console.error("Erreur de connexion à l'API :", error);
   }
 }
 
-// --- FONCTION DE LECTURE ---
+// --- FONCTION LECTURE ÉCRAN ---
 function readScreenContent() {
   if (!speechEnabled) return;
   const activeScreen = document.querySelector(".screen.active");
@@ -192,9 +190,9 @@ function showTool(index) {
                 <h2 class="activity-title">${tool.name}</h2>
                 <div class="tag">${tool.category}</div>
                 ${imageHtml}
-                <p><strong>Emplacement :</strong> ${tool.location}</p>
+                <p><strong>📍 Emplacement :</strong> ${tool.location}</p>
                 <div class="tool-description-section"><p>${tool.description}</p></div>
-                <div class="info-box"><p><strong>Prix :</strong> ${tool.price}</p></div>
+                <div class="info-box"><p><strong>💰 Prix :</strong> ${tool.price}</p></div>
             </div>`;
   }
   document.querySelector("#toolDescription .screen-navigation").innerHTML = `
@@ -312,18 +310,11 @@ toggleSpeechButton.addEventListener("click", () => {
   else readScreenContent();
 });
 
-// --- ZOOM TEXTE (CORRECTIF SPÉCIFIQUE) ---
+// --- ZOOM TEXTE ---
 function updateTextScale() {
-  // 1. On met à jour la variable CSS pour tout le site
   document.documentElement.style.setProperty("--text-scale", textSize);
-
-  // 2. FORCE BRUTE pour le paragraphe "Qui sommes-nous"
-  // On sélectionne le paragraphe dans la section .about-section
   const aboutParagraph = document.querySelector(".about-section p");
-
   if (aboutParagraph) {
-    // On calcule la taille : 1rem (taille de base) * le facteur de zoom
-    // On l'applique directement en style "inline" pour écraser tout CSS récalcitrant
     aboutParagraph.style.fontSize = `calc(1rem * ${textSize})`;
     aboutParagraph.style.lineHeight = "1.5";
   }
@@ -331,7 +322,7 @@ function updateTextScale() {
 
 increaseTextButton.addEventListener("click", () => {
   if (textSize < 2.5) {
-    textSize = parseFloat((textSize + 0.1).toFixed(1)); // Évite les bugs de virgule flottante
+    textSize = parseFloat((textSize + 0.1).toFixed(1));
     updateTextScale();
   }
 });
@@ -343,7 +334,6 @@ decreaseTextButton.addEventListener("click", () => {
   }
 });
 
-// --- NAVIGATION ---
 navButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const target = btn.getAttribute("data-target");

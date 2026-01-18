@@ -9,23 +9,29 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const DATA_FILE = "./data.json";
-// Chemin absolu vers le dossier images pour éviter les erreurs
+// Chemins des fichiers
+const DATA_FILE = path.join(__dirname, "data.json");
+// Note : Sur Render gratuit, les images uploadées ici disparaîtront au redémarrage
 const IMAGES_DIR = path.join(__dirname, "../public/main/images");
 
 const ADMIN_PASSWORD = "ensc";
 
+// --- 1. SERVIR LE SITE WEB (Frontend) ---
+// Sert le dossier "public/main" (index.html, script.js...) à la racine du site
+app.use(express.static(path.join(__dirname, "../public/main")));
+
+// Sert le dossier "public/admin" sur l'adresse /admin
+app.use("/admin", express.static(path.join(__dirname, "../public/admin")));
+
 // --- CONFIGURATION MULTER (Upload) ---
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    // Création automatique du dossier s'il n'existe pas
     if (!fs.existsSync(IMAGES_DIR)) {
       fs.mkdirSync(IMAGES_DIR, { recursive: true });
     }
     cb(null, IMAGES_DIR);
   },
   filename: function (req, file, cb) {
-    // On garde le nom d'origine
     cb(null, file.originalname);
   },
 });
@@ -60,31 +66,24 @@ app.get("/api/data", (req, res) => {
   res.json(data);
 });
 
-// Route d'upload existante
 app.post("/api/upload", requireAuth, upload.single("image"), (req, res) => {
   if (!req.file) return res.status(400).send("Aucun fichier reçu.");
   res.json({ success: true, filename: req.file.originalname });
 });
 
-// === NOUVELLES ROUTES GESTION IMAGES ===
-
-// 1. Lister les images
 app.get("/api/images", requireAuth, (req, res) => {
   if (!fs.existsSync(IMAGES_DIR)) return res.json([]);
 
   fs.readdir(IMAGES_DIR, (err, files) => {
     if (err)
       return res.status(500).json({ error: "Impossible de lire le dossier" });
-    // Filtre les fichiers cachés (commençant par point)
     const images = files.filter((file) => !file.startsWith("."));
     res.json(images);
   });
 });
 
-// 2. Supprimer une image
 app.delete("/api/image/:filename", requireAuth, (req, res) => {
   const filename = req.params.filename;
-  // Sécurité basique
   if (filename.includes("..") || filename.includes("/")) {
     return res.status(400).json({ error: "Nom de fichier invalide" });
   }
@@ -101,7 +100,6 @@ app.delete("/api/image/:filename", requireAuth, (req, res) => {
   }
 });
 
-// 3. Renommer une image
 app.post("/api/image/rename", requireAuth, (req, res) => {
   const { oldName, newName } = req.body;
 
@@ -124,9 +122,7 @@ app.post("/api/image/rename", requireAuth, (req, res) => {
     res.json({ success: true });
   });
 });
-// ========================================
 
-// Routes Thèmes
 app.post("/api/theme", requireAuth, (req, res) => {
   const { key, title, description, tools } = req.body;
   data.toolsData[key] = {
@@ -147,7 +143,6 @@ app.delete("/api/theme/:key", requireAuth, (req, res) => {
   res.json({ success: true, toolsData: data.toolsData });
 });
 
-// Routes Questions
 app.post("/api/question", requireAuth, (req, res) => {
   const { index, question, options, optionThemes } = req.body;
   const qData = {
@@ -174,7 +169,7 @@ app.delete("/api/question/:index", requireAuth, (req, res) => {
   res.json({ success: true, quizQuestions: data.quizQuestions });
 });
 
-const PORT = 3000;
-app.listen(PORT, () =>
-  console.log(`Serveur SÉCURISÉ démarré sur http://localhost:${PORT}`),
-);
+// --- 2. DÉMARRAGE DU SERVEUR ---
+// Render fournit un port via process.env.PORT
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));

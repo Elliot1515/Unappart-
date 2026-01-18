@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:3000/api";
+// MODIFICATION IMPORTANTE : On utilise un chemin relatif (api à la racine)
+const API_BASE = "/api";
 let currentAuthPassword = "";
 
 function setApiPassword(password) {
@@ -15,7 +16,6 @@ function getHeaders() {
 async function handleResponse(response) {
   if (response.status === 401) throw new Error("AUTH_REQUIRED");
   if (!response.ok) {
-    // Tente de récupérer le message d'erreur du serveur
     try {
       const err = await response.json();
       throw new Error(err.error || "Erreur serveur");
@@ -41,7 +41,6 @@ const ThemeAPI = {
     return handleResponse(response);
   },
 
-  // === NOUVELLES MÉTHODES GESTION IMAGES ===
   async getImages() {
     const response = await fetch(`${API_BASE}/images`, {
       headers: { "x-admin-password": currentAuthPassword },
@@ -65,7 +64,6 @@ const ThemeAPI = {
     });
     return handleResponse(response);
   },
-  // ========================================
 
   async create(themeData) {
     const response = await fetch(`${API_BASE}/theme`, {
