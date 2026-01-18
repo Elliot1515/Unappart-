@@ -1,0 +1,458 @@
+/* ==========================================================================
+   1. VARIABLES & RESET GLOBAL
+   ========================================================================== */
+:root {
+    /* Police unique pour toute l'interface */
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Couleurs */
+    --primary-color: #007bff;       /* Bleu principal */
+    --primary-hover: #0056b3;
+    --danger-color: #dc3545;        /* Rouge suppression */
+    --danger-hover: #c82333;
+    --secondary-color: #6c757d;     /* Gris boutons secondaires */
+    --bg-color: #f4f6f8;            /* Fond de page gris très clair */
+    --card-bg: #ffffff;             /* Fond des cartes blanc */
+    --text-color: #333333;
+    --border-color: #dee2e6;
+    
+    /* Dimensions - Texte agrandi */
+    --base-font-size: 18px;
+    --border-radius: 8px;
+}
+
+/* Application des styles de base */
+body {
+    font-family: var(--font-main);
+    font-size: var(--base-font-size);
+    line-height: 1.5; /* Légèrement réduit pour gagner de la place verticale */
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Force l'héritage de la police et de la taille */
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+h2 { font-size: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; }
+h3 { font-size: 1.25rem; margin-bottom: 15px; }
+
+
+/* ==========================================================================
+   2. LAYOUT GÉNÉRAL
+   ========================================================================== */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 20px; /* Réduit */
+    padding: 10px 0;
+}
+
+.admin-section {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+/* ==========================================================================
+   3. NAVIGATION (ONGLETS / TABS)
+   ========================================================================== */
+.admin-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0;
+}
+
+.tab-button {
+    background: #e9ecef;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+    background: #dee2e6;
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(2px);
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==========================================================================
+   4. FORMULAIRES & CHAMPS (Compacts)
+   ========================================================================== */
+.add-form {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.full-width-input {
+    width: 100%;
+    padding: 10px; /* Réduit */
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.full-width-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.simple-options {
+    margin: 20px 0;
+}
+
+.option-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.option-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+/* Espacement vertical réduit pour les formulaires dans les modales */
+.form-group {
+    margin-bottom: 15px; /* Était 20px */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; /* Était 8px */
+    font-weight: 600;
+    color: #495057;
+}
+
+.help-text {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 15px;       /* Était 20px */
+    margin-bottom: 15px; /* Était 25px */
+    border-radius: var(--border-radius);
+    background: #fff;
+}
+
+legend {
+    font-weight: 700;
+    padding: 0 10px;
+    color: var(--primary-color);
+}
+
+
+/* ==========================================================================
+   5. BOUTONS
+   ========================================================================== */
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.primary-button {
+    background: var(--primary-color);
+    color: white;
+}
+.primary-button:hover { background: var(--primary-hover); }
+
+.secondary-button {
+    background: var(--secondary-color);
+    color: white;
+}
+.secondary-button:hover { background: #5a6268; }
+
+.danger-button {
+    background: var(--danger-color);
+    color: white;
+}
+.danger-button:hover { background: var(--danger-hover); }
+
+.small-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================================
+   6. LISTES (Thèmes & Questions)
+   ========================================================================== */
+.theme-item, .question-item {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+    background: #ffffff;
+    transition: box-shadow 0.2s;
+}
+
+.theme-item:hover, .question-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tool-row {
+    transition: background 0.2s;
+}
+.tool-row:hover {
+    background: #f8f9fa !important;
+}
+
+.question-actions, .modal-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px; /* Réduit */
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    justify-content: flex-end;
+}
+
+.questions-container {
+    max-height: 700px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    background: #fafafa;
+}
+
+/* Options du quiz larges */
+.option-edit-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 15px;
+    background: #f1f3f5;
+    border-radius: 6px;
+    flex-wrap: nowrap;
+}
+
+.option-edit-group label {
+    flex-shrink: 0;
+    min-width: 90px;
+    font-weight: bold;
+}
+
+.option-edit-input {
+    flex: 10; /* Largeur max */
+    min-width: 300px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.current-themes {
+    margin: 20px 0;
+    padding: 15px;
+    background: #e7f3ff;
+    border-radius: 6px;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+
+/* ==========================================================================
+   7. MODALES (Optimisées pour l'espace)
+   ========================================================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+}
+
+/* Modale Standard (Thèmes) */
+.modal-content {
+    background-color: white;
+    /* Marge haute réduite pour remonter la fenêtre */
+    margin: 3vh auto; 
+    padding: 25px; /* Padding réduit */
+    border-radius: 12px;
+    width: 90%;
+    max-width: 650px;
+    max-height: 90vh; /* Hauteur max augmentée */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #aaa;
+    line-height: 1;
+}
+.close-button:hover { color: #333; }
+
+.modal-theme-selection {
+    max-height: 50vh; /* Pour éviter que la liste pousse trop */
+    overflow-y: auto;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+
+/* ==========================================================================
+   8. MODALE OUTIL "LARGE" (Compacte)
+   ========================================================================== */
+.modal-content.large-modal {
+    margin: 1vh auto; /* Collé presque en haut */
+    height: 98vh;     /* Utilise toute la hauteur dispo */
+    /*max-height: none;*/
+    width: 95%;
+    max-width: 1100px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Padding très réduit pour l'espace */
+}
+
+.edit-form-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 15px;
+    /* Marges verticales réduites */
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+}
+
+#toolEditTitle, .modal-actions {
+    flex-shrink: 0; /* Ne rétrécissent jamais */
+}
+
+
+/* ==========================================================================
+   9. NOTIFICATIONS
+   ========================================================================== */
+.notification {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    padding: 15px 25px;
+    background: #28a745;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1100;
+    font-weight: 600;
+    display: none;
+    animation: slideIn 0.3s ease-out;
+}
+
+.notification.error {
+    background: var(--danger-color);
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+
+/* ==========================================================================
+   10. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 10px;
+    }
+    
+    .option-row, .question-actions, .modal-actions {
+        flex-direction: column;
+    }
+    
+    .option-edit-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .option-edit-input {
+        min-width: 0;
+    }
+    
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+}

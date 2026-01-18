@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unapparté - Visite d'appartement adaptée</title>   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container high-contrast large-text">
+        <header>
+            <h1>Unapparté</h1>
+            <button id="toggleSpeech" class="accessibility-button" aria-label="Activer/désactiver la lecture vocale">🔊</button>
+        </header>
+
+        
+    </header>
+
+      <div id="welcomeScreen" class="screen active">
+    <div class="welcome-content">
+
+        <h2 class="app-title">Bienvenue à Unapparté</h2>
+
+        <p class="welcome-intro">
+            <strong>Unapparté</strong> est un appartement aménagé avec des aides techniques et numériques
+            pour le soutien à domicile. Cet outil est dédié à la découverte des solutions liées à la basse vision.
+
+        </p>
+
+        <div class="experience-box">
+            <h3 class="section-title">Déroulement de l’expérience</h3>
+            <ol>
+                <li>Répondez à un <strong>court questionnaire</strong> pour identifier vos besoins.</li>
+                <li>Des <strong>thèmes adaptés </strong> vous sont proposés par ordre de pertinence.</li>
+                <li>Découvrez les <strong>aides techniques associées associés</strong> lors d’une visite d’environ 7 minutes.</li>
+            </ol>
+        </div>
+
+        <p class="important-info">
+            Important : Veuillez ne pas recharger la page pendant votre expérience, car vos données seraient perdues. 
+        <BR>Si vous n’avez pas de déficience visuelle, vous pouvez porter les lunettes de simulation
+            de basse vision car des cas pratiques vous seront proposés.</p>
+                
+                <div class="button-group">
+                    <button class="nav-button" data-target="quizScreen">Commencer le questionnaire</button>
+                </div>
+                <div class="about-section">
+            <h4 class="about-title">Qui sommes-nous&nbsp;?</h4>
+            <p class="texte-dynamique">
+                Ce site est un projet de fin d’études mené par deux étudiants de l’École nationale
+                supérieure de Cognitique de Bordeaux, supervisé par le TASDA.
+            </p>
+             </div>
+            </div>
+        </div>
+        
+        <div id="quizScreen" class="screen">
+            <h2 class="tool-title">Questionnaire d'adaptation</h2>
+            <div class="progress-bar">
+                <div id="quizProgressFill" class="progress-fill"></div>
+            </div>
+            
+            <div class="quiz-question-container">
+                <p id="quizQuestionNumber" style="margin-bottom: 1rem;">Question 1 sur 5</p>
+                <h3 id="quizQuestion" class="xlarge-text" style="margin-bottom: 2rem;">Question en cours...</h3>
+                <div id="quizOptions" class="quiz-options">
+                    </div>
+            </div>
+            
+            <div class="screen-navigation">
+                <button class="nav-button" data-target="welcomeScreen">Annuler et Retour</button>
+            </div>
+        </div>
+
+        <div id="themeSelection" class="screen">
+            <h2 class="tool-title" style = "text-align : center">Choisissez un thème de visite</h2>
+            
+            <div class="theme-cards">
+            </div>
+            
+            <div class="screen-navigation">
+                <button class="nav-button" data-target="quizScreen">Retour au Quiz</button>
+            </div>
+        </div>
+
+        <div id="toolDescription" class="screen">
+            <div class="tool-content">
+                <div id="toolContent">
+                    </div>
+            </div>
+            
+            <div class="screen-navigation">
+                <button class="nav-button" data-target="themeIntroduction">Retour</button> 
+                <button class="nav-button" id="foundTool">J'ai trouvé cet outil</button>
+            </div>
+        </div>
+
+        <div id="activityScreen" class="screen">
+            <div class="activity-content">
+                <div id="activityContent"></div>
+
+                <div class="activity-feedback" id="activityFeedback"></div>
+            </div>
+
+            <div class="screen-navigation">
+                <button class="nav-button" data-target="themeSelection">Nouveau thème</button>
+                <button class="nav-button" id="nextTool">Outil suivant</button>
+            </div>
+        </div>
+
+        <div class="accessibility-controls">
+            <button id="increaseText" class="accessibility-button" aria-label="Augmenter la taille du texte">A+</button>
+            <button id="decreaseText" class="accessibility-button" aria-label="Réduire la taille du texte">A-</button>
+        </div>
+    </div>
+    </div>
+    <div id="themeIntroduction" class="screen"> 
+ 
+    <script src="script.js"></script>
+</body>
+</html>

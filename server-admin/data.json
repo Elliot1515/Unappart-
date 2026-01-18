@@ -1,0 +1,864 @@
+{
+  "toolsData": {
+    "rester_en_lien": {
+      "title": "Rester en lien",
+      "description": "En 2024, une étude a mis en évidence qu’un adulte souffrant d’une déficience visuelle a environ 2 fois plus de chances d’être socialement isolé qu’un adulte voyant, et présente un risque accru de symptômes dépressifs.",
+      "tools": [
+        {
+          "id": "assistant_vocal",
+          "name": "Assistant vocal",
+          "image": "./images/assistant.jpg",
+          "category": "Technologique",
+          "location": "Dans la chambre sur la table de nuit",
+          "price": "À partir de 60€",
+          "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour effectuer des tâches, répondre à des questions ou contrôler des appareils. Il peut permettre de gérer à distance, par la voix, des objets connectés. Il se présente sous la forme d'une enceinte.",
+          "instructions": [
+            "Dire \"ok Google\" ",
+            "Donner l'action que l'on souhaite qu'il réalise"
+          ],
+          "activity": {
+            "title": "Rester en lien avec ses proches",
+            "instructions": "Tester comment l’assistant vocal permet d’envoyer un message ou passer un appel rapidement."
+          },
+          "quiz": {
+            "question": "Comment un assistant vocal comme Google Home peut-il principalement aider une personne à rester en lien avec ses proches ?",
+            "options": [
+              "A) En ajustant automatiquement la température de la pièce",
+              "B) En passant des appels ou envoyant des messages par la voix",
+              "C) En suivant automatiquement la localisation des proches",
+              "D) En jouant de la musique pour distraire la personne"
+            ],
+            "correctAnswer": "B",
+            "feedback": "La principale fonction pour rester en contact est la communication vocale ou textuelle. Passer des appels ou envoyer des messages via l’assistant permet de garder un lien simple et rapide avec les proches. Les autres options n’aident pas réellement à maintenir le lien social."
+          }
+        },
+        {
+          "id": "adaptative_phone",
+          "name": "Téléphones adaptés (Doro, Binom, Olga)",
+          "image": "./images/telephone.jpg",
+          "category": "Technologique",
+          "location": "Sur le bureau",
+          "price": "De 100 à 500€ selon les fonctionnalités.",
+          "description": "Un téléphone adapté permet à une personne malvoyante d’utiliser plus facilement les fonctions essentielles grâce aux réglages d’accessibilité (agrandissement des caractères, navigation simplifiée, commande vocale).\nSi ces réglages ne suffisent pas, plusieurs solutions existent : \n- Téléphones adaptés d’origine : touches larges et contrastées, retour vocal, raccourcis d’appels (ex. Binom à clapet, Doro mobiles). \n- Smartphones simplifiés : interface agrandie et accessible, parfois centrée sur la voix (ex. Binom smartphone, Doro smartphones, Olga). \n- Applications d’accessibilité : pour modifier l’affichage ou vocaliser l’écran (ex. Big Launcher, VoiceOver pour iPhone, TalkBack pour Android).",
+          "instructions": [
+            "Screenshot arrive bientot"
+          ],
+          "activity": {
+            "title": "Appeler une personne",
+            "instructions": "Appeler un proche en utilisant un raccourci ou la commande vocale. "
+          },
+          "quiz": {
+            "question": "Parmi les fonctions suivantes, lesquelles permettent à un téléphone adapté d’aider une personne malvoyante à rester autonome ?",
+            "options": [
+              "A) Agrandir les caractères et les icônes",
+              "B) Lire à haute voix les messages et le nom de l’appelant",
+              "C) Activer la commande vocale pour lancer un appel ou envoyer un message",
+              "D) Détecter automatiquement les obstacles dans la pièce"
+            ],
+            "correctAnswer": "A, B, C",
+            "feedback": "Un téléphone adapté peut agrandir les caractères, vocaliser les messages et utiliser la commande vocale. La détection d’obstacles n’est pas une fonction du téléphone."
+          }
+        },
+        {
+          "id": "door_locker",
+          "name": "Interphone et serrure conntecté (Nuki)",
+          "image": "./images/locker.jpg",
+          "category": "Technologique",
+          "location": "A l'entrée ",
+          "price": "A partir de 80 € ",
+          "description": "Permet une ouverture de la porte à distance, même lorsque la personne se trouve à l’intérieur du logement ou l'ouverture à distance par un tiers (proche, aidant ou personne de confiance).",
+          "instructions": [
+            "Screenshot arrive bientot"
+          ],
+          "activity": {
+            "title": "Déverouillage ",
+            "instructions": "Effectuez un verrouillage ainsi qu'un déverrouillage de la serrure. "
+          },
+          "quiz": {
+            "question": "Quelles options permettent à un interphone adapté d’avertir efficacement une personne malvoyante qu’un visiteur est à la porte ?",
+            "options": [
+              "A) Sonnerie classique uniquement",
+              "B) Retour vocal ou annonce audio du visiteur",
+              "C) Sonnerie spécifique avec vibration ou signal lumineux contrasté",
+              "D) Reconnaissance automatique de la personne selon sa voix"
+            ],
+            "correctAnswer": "B, C",
+            "feedback": "Un interphone adapté peut utiliser un retour vocal ou une sonnerie spéciale pour alerter la personne malvoyante. Il ne reconnaît pas automatiquement les visiteurs à partir de leur voix et une simple sonnerie classique n’est pas toujours suffisante."
+          }
+        }
+      ]
+    },
+    "se_d_placer": {
+      "title": "Se déplacer",
+      "description": "La déficience visuelle est un facteur reconnu de risque élevé de chutes : chez les personnes ayant une basse vision, le risque de chute plus que double par rapport à des personnes voyantes. Dans ce contexte, assurer une mobilité sûre, à l’intérieur comme à l’extérieur, est essentiel pour préserver l’autonomie, éviter les accidents, réduire l’isolement et maintenir la qualité de vie.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Éclairages réglables (spots connectés, baguette LED, plafonnier)",
+          "image": "./images/lumiere.jpg",
+          "category": "Domotique",
+          "location": "Dans la cuisine",
+          "price": "Environ 30 euros chacun et  jusqu'à 200€ pour un système complet.",
+          "description": "Un bon éclairage est important pour les personnes avec une déficience visuelle : il facilite la lecture, les déplacements et toutes les activités quotidiennes, tout en limitant la fatigue visuelle. L’adaptation de la lumière augmente le contraste des objets et améliore la sécurité en réduisant les risques de chute et d’accident. Un éclairage homogène, sans reflets ni scintillements, permet aussi d’éviter l’éblouissement, souvent gênant pour les personnes ayant une déficience visuelle.",
+          "instructions": [],
+          "activity": {
+            "title": "Test de lumières",
+            "instructions": "Régler la luminosité d'un spot dans la cuisine pour préparer le repas sans éblouissement."
+          },
+          "quiz": {
+            "question": "Quel type d’éclairage est le plus confortable pour éviter l’éblouissement en cuisine ?",
+            "options": [
+              "A) Éclairage direct très fort",
+              "B) Éclairage homogène et sans reflets",
+              "C) Lumière clignotante",
+              "D) Lumière colorée flashy"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Un éclairage homogène et sans reflets réduit l’éblouissement et les zones d’ombre, facilite la vision des objets et rend la cuisine plus sûre et confortable."
+          }
+        },
+        {
+          "id": "",
+          "name": "Assistant vocal Google Home (commande des volets et lumières)",
+          "image": "./images/assistant.jpg",
+          "category": "Technologique",
+          "location": "Dans la chambre",
+          "price": "À partir de 60 €",
+          "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour\neffectuer des tâches, répondre à des questions ou contrôler des appareils.\nIl peut permettre de gérer à distance, par la voix, des objets connectés.",
+          "instructions": [
+            "Dire : “Ok Google\"",
+            "Demandez l'action que vous souhaitez réaliser"
+          ],
+          "activity": {
+            "title": "Allumer les lumières ",
+            "instructions": "Demander d'éteindre puis de rallumer la lumière."
+          },
+          "quiz": {
+            "question": "Quel facteur peut limiter la capacité d’un assistant vocal à contrôler des appareils comme les lumières ou les volets ?",
+            "options": [
+              "A) La vitesse de la voix",
+              "B) La compatibilité de l’appareil avec Google Assistant",
+              "C) La couleur de l’ampoule",
+              "D) L’heure de la journée"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Un assistant vocal ne peut contrôler que les appareils compatibles et correctement connectés à l’application. Si une lampe ou un volet n’est pas compatible avec Google Assistant, la commande vocale ne fonctionnera pas."
+          }
+        },
+        {
+          "id": "",
+          "name": "Téléassistance",
+          "image": "./images/teleassistance.jpg",
+          "category": "Technologique",
+          "location": "Partout",
+          "price": "A partir de 25 à 50 €",
+          "description": "La téléassistance permet d'alerter en cas de chute ou d'accident pour rassurer la personne et ses aidants et pour permettre une intervention rapide pour les cas graves.\nIl peut être porté sous forme de médaillon. ",
+          "instructions": [],
+          "activity": {
+            "title": "Porter le médaillon",
+            "instructions": "Essayez le médaillon pour comprendre la sensation de le porter"
+          },
+          "quiz": {
+            "question": "Quelle condition est essentielle pour que la téléassistance fonctionne correctement ?",
+            "options": [
+              "A) Porter le médaillon en permanence",
+              "B) Vérifier que la batterie est chargée",
+              "C) S’assurer que le réseau ou la connexion est active",
+              "D) L’utiliser uniquement dans une pièce avec un appareil connecté"
+            ],
+            "correctAnswer": "A, B, C ",
+            "feedback": "La téléassistance dépend du port du médaillon, de la batterie et de la connexion pour pouvoir envoyer des alertes. L’option D est fausse : il n’est pas nécessaire d’être dans une pièce particulière."
+          }
+        }
+      ]
+    },
+    "s_habiller": {
+      "title": "S’habiller",
+      "description": "Selon, une étude publiée dans le Journal of Visual Impairment & Blindness (2017), près de 7 personnes déficientes visuelles sur 10 citent la difficulté à s'habiller de manière appropriée comme un facteur affectant leur image de soi et leur vie sociale. S'habiller de manière autonome et harmonieuse représente donc un défi quotidien bien au-delà du simple geste pratique. Identifier les couleurs, associer les vêtements, retrouver un article spécifique dans un dressing sont des sources de frustration et de perte de temps qui peuvent miner la confiance en soi.",
+      "tools": [
+        {
+          "id": "color_detector",
+          "name": "Détecteur de couleurs (Colorino)",
+          "image": "./images/colorino.jpg",
+          "category": "technologique",
+          "location": "Dans la salle de bain",
+          "price": "219€",
+          "description": "Le détecteur de couleurs sonore permet de pouvoir choisir une couleur souhaitée et de repérer les points ou les sources lumineuses. Il peut être une aide à l'habillage.",
+          "instructions": [
+            "Allumer l'appareil.",
+            "Placer la sonde sur le tissu.",
+            "Appuyer sur le bouton de scan.",
+            "Écouter le nom de la couleur annoncée."
+          ],
+          "activity": {
+            "title": "Associer deux chaussettes de la même couleur",
+            "instructions": "Utilisez le détecteur de couleurs pour trouver et associer deux chaussettes de la même couleur dans un panier contenant plusieurs paires de couleurs différentes."
+          },
+          "quiz": {
+            "question": "Le détecteur de couleurs peut-il aider au-delà du choix des vêtements ?",
+            "options": [
+              "A) Non :  son usage est strictement limité au domaine vestimentaire",
+              "B) Oui : il peut aussi aider à trier des documents et à identifier des fils électriques ou encore choisir des produits par leur emballage",
+              "C) Oui : il peut également lire à voix haute le texte imprimé sur les étiquettes",
+              "D) Non : car il ne fonctionne que sur des surfaces textiles."
+            ],
+            "correctAnswer": "B",
+            "feedback": "C'est un outil polyvalent pour toute tâche nécessitant de discriminer une couleur. Son usage dépasse largement le domaine vestimentaire."
+          }
+        },
+        {
+          "id": "socks_organizer",
+          "name": "Attache-chaussettes",
+          "image": "./images/chaussette.jpg",
+          "category": "non-technologique",
+          "location": "Dans la salle de bain",
+          "price": "6€ les 10",
+          "description": "Ces petites pièces de plastique en forme de cintre permettent d'attacher les chaussettes d'une même paire, de les laver en machine et de les sécher sans les dissocier.",
+          "instructions": [
+            "Attacher les deux chaussettes d'une paire avant de les mettre dans le panier à linge sale.",
+            "Les laver et sécher ainsi.",
+            "Les ranger sans les détacher."
+          ],
+          "activity": {
+            "title": "Association de chaussettes",
+            "instructions": "Prenez 2 paires de chaussettes différentes et utilisez les attaches-chaussettes pour les assembler par paires."
+          },
+          "quiz": {
+            "question": "Quel est l'avantage principal de l'attache-chaussette par rapport au fait de les rouler en boule ?",
+            "options": [
+              "A) C'est une solution plus économique",
+              "B) Cela préserve mieux la qualité de l'élastique des chaussettes",
+              "C) Cela permet de maintenir le couple identifié avec certitude dès le tri",
+              "D) C'est une méthode plus rapide et moins fatigante."
+            ],
+            "correctAnswer": "C, D",
+            "feedback": "Le roulement en boule repose sur la mémoire ou la reconnaissance tactile, tandis que l'attache-chaussette garantit que la paire reste physiquement associée de la mise au sale jusqu'au rangement, indépendamment de toute capacité visuelle ou tactile à les distinguer."
+          }
+        },
+        {
+          "id": "clothing_tags",
+          "name": "Balises Vocaléo pour vêtements",
+          "image": "./images/vocaleo.jpg",
+          "category": "technologique",
+          "location": "Dans la chambre",
+          "price": "5 balises vêtement à 15€",
+          "description": "Les balises permettent d'identifier des objets. Elles sont utilisées avec l'application smartphone VOCALEO qui permet d'écouter un mémo vocal enregistré et attribuer à une balise. Si ce sont des balises spéciale vêtement elles résistent au passage à la machine à laver.",
+          "instructions": [
+            "Télécharger l'appli 'Vocaléo'.",
+            "Coller/coudre une balise sur un vêtement.",
+            "Enregistrer un message personnalisé ('Robe bleue d'été', 'Costard rendez-vous').",
+            "Passer son smartphone près de la balise pour écouter."
+          ],
+          "activity": {
+            "title": "Retrouver un vêtement ",
+            "instructions": "Cachez une chaussette parmi d'autres dans la panière. Utilisez l'application Vocaléo pour retrouver le vêtement spécifique en scannant les balises avec votre smartphone."
+          },
+          "quiz": {
+            "question": "Que peut-on enregistrer sur une balise Vocaléo pour un vêtement ?",
+            "options": [
+              "A) Seulement la couleur et le type de vêtement (ex: 'pantalon rose')",
+              "B) Seulement des instructions d'entretien (ex: 'lavage à 30°')",
+              "C) Une description personnalisée : couleur / matière / style /occasion d'utilisation / etc.",
+              "D) Le prix et la date d'achat du vêtement"
+            ],
+            "correctAnswer": "C",
+            "feedback": "La force du système Vocaléo est sa personnalisation. L'utilisateur enregistre le message vocal qui lui est le plus utile : une simple description, un code personnel ('tenue de mariage'), ou des détails sur la matière ('laine, chaude') pour adapter son choix à la saison ou à l'événement."
+          }
+        }
+      ]
+    },
+    "cuisiner__manger": {
+      "title": "Cuisiner, manger",
+      "description": "La préparation des repas peut devenir un véritable défi pour les personnes aveugles ou malvoyantes, en raison des difficultés à repérer les ingrédients, à lire les étiquettes ou à manipuler les ustensiles en toute sécurité. Une étude indique que plus de 60 % des personnes déficientes visuelles ont besoin d’assistance ou d’adaptations pour cuisiner de manière autonome, ce qui peut limiter leur autonomie quotidienne et accroître la dépendance à autrui.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Tapis de protection pour plaque à induction",
+          "image": "./images/tapis.jpg",
+          "category": "Non technologique ",
+          "location": "dans la cuisine sur les plaques",
+          "price": "9 €",
+          "description": "Le tapis de protection de plaque à induction est vendu en tant que moyen de protection contre les rayures. Il permet ici de marquer l’emplacement des plaques à induction et selon les modèles il peut être anti-dérapant.",
+          "instructions": [
+            "le placer sur les plaques"
+          ],
+          "activity": {
+            "title": "Test de dérapage",
+            "instructions": "Poser une casserole ou une poêle sur la plaque protégée et essayer de la faire glisser par inadvertance. "
+          },
+          "quiz": {
+            "question": "Quel est l’avantage principal d’un tapis de protection pour plaque à induction ?",
+            "options": [
+              "A) Il permet de cuire les aliments plus rapidement",
+              "B) Il protège la plaque contre les rayures et aide à marquer l’emplacement des plaques",
+              "C) Il remplace complètement les ustensiles de cuisine",
+              "D) Il augmente la puissance de la plaque à induction"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Le tapis de protection sert à prévenir les rayures sur la plaque et, selon les modèles, peut également indiquer l’emplacement des plaques et éviter que les casseroles glissent. Il n’a aucun effet sur la cuisson ni sur la puissance de la plaque."
+          }
+        },
+        {
+          "id": "",
+          "name": "Repères tactiles",
+          "image": "./images/pate.jpg",
+          "category": "Non technologique",
+          "location": "dans la cuisine sur les plaques notamment",
+          "price": "8 €",
+          "description": "La pâte adhésive ou les pastilles adhésives permettent de créer des repères tactiles sur n’importe quel objet, bouton ou surfaces (Papier, bois, verre, métal, etc). Elle permet de marquer l’emplacement des réglages d’un appareil en dessinant en relief.",
+          "instructions": [
+            "Appliquer de la pate adhesive sur l'emplacement que l'on veut remarquer"
+          ],
+          "activity": {
+            "title": "Test de toucher",
+            "instructions": "En fermant les yeux ou en utilisant les lunettes de modification de la vision essayez de repérer les différents emplacement de la pate adhésive sur les plaques. "
+          },
+          "quiz": {
+            "question": "Quel est l’avantage principal des pâtes ou pastilles adhésives ?",
+            "options": [
+              "A) Décorer les objets avec des couleurs vives",
+              "B) Créer des repères tactiles pour identifier les réglages d’un appareil",
+              "C) Augmenter la durée de vie des boutons",
+              "D)Servir de colle permanente pour fixer des objets lourds"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Les pâtes ou pastilles adhésives permettent de marquer en relief l’emplacement des boutons ou réglages, ce qui aide à manipuler les appareils sans se tromper, notamment pour les personnes malvoyantes. Elles ne sont pas destinées à décorer, coller ou prolonger la durée de vie des objets."
+          }
+        },
+        {
+          "id": "",
+          "name": "Balance parlante",
+          "image": "./images/balance.jpg",
+          "category": "Non technologique",
+          "location": "dans la cuisine sur le plan de travail",
+          "price": "40 €",
+          "description": "Une balance de cuisine parlante est un outil essentiel pour les personnes malvoyantes souhaitant cuisiner avec précision. Elle annonce vocalement le poids des ingrédients, évitant ainsi d’avoir à lire un écran parfois trop petit ou peu contrasté. Elle permet de mesurer des aliments solides ou liquides en toute autonomie.",
+          "instructions": [
+            "L’allumer, poser le contenant, faire la tare, ajouter l’aliment, écouter le poids."
+          ],
+          "activity": {
+            "title": "Pesage ",
+            "instructions": "Mettre un objet dans le contenant de la balance et le peser."
+          },
+          "quiz": {
+            "question": "Une personne malvoyante utilise une balance de cuisine parlante. Quel est l’avantage principal par rapport à une balance classique ?",
+            "options": [
+              "A) Elle peut cuisiner sans connaître les quantités exactes",
+              "B) Elle permet de connaître le poids des ingrédients sans regarder l’écran (grâce à l’annonce vocale)",
+              "C) Elle remplace totalement les aides visuelles pour lire les recettes",
+              "D) Elle peut mesurer uniquement les ingrédients solides (pas liquides)"
+            ],
+            "correctAnswer": "B",
+            "feedback": "La balance parlante offre une autonomie accrue en indiquant le poids à voix haute, ce qui évite de lire un écran souvent petit ou mal contrasté. Elle ne remplace pas les aides visuelles pour la lecture de recettes et peut mesurer aussi bien les liquides que les solides."
+          }
+        },
+        {
+          "id": "",
+          "name": "Indicateur de niveaude liquide",
+          "image": "./images/indicateur.jpg",
+          "category": "Non technologique",
+          "location": "dans la cuisine",
+          "price": "15 €",
+          "description": "L’indicateur de niveau de liquide est un petit appareil qui se place sur le bord d’un verre ou d’une tasse. Il émet un signal sonore ou vibratoire lorsque le liquide atteint le niveau souhaité, permettant ainsi de remplir ses boissons en toute sécurité sans déborder.",
+          "instructions": [
+            "Placer l'indicateur sur le bord du verre et verser le liquide jusqu'à ce que l'appareil sonne"
+          ],
+          "activity": {
+            "title": "Ne pas déborder",
+            "instructions": "Verser de l'eau dans une tasse avec l'indicateur et arrêter des qu'il sonne."
+          },
+          "quiz": {
+            "question": "Quel est le principal avantage d’un indicateur de niveau de liquide ?",
+            "options": [
+              "A) Il refroidit automatiquement la boisson",
+              "B) Il émet un signal sonore ou vibratoire quand le liquide atteint le niveau souhaité",
+              "C) Il mesure la température exacte de la boisson",
+              "D) Il mélange la boisson pour éviter les dépôts"
+            ],
+            "correctAnswer": "B",
+            "feedback": "L’indicateur prévient le risque de débordement en signalant quand le verre ou la tasse est rempli. Il ne chauffe, ne refroidit ni ne mélange la boisson."
+          }
+        }
+      ]
+    },
+    "lecture": {
+      "title": "Lire",
+      "description": "La lecture, activité essentielle pour le savoir et le divertissement, reste un défi pour de nombreuses personnes aveugles ou malvoyantes. Selon une enquête de la Ligue Braille, près de 65 % des personnes déficientes visuelles déclarent rencontrer des difficultés régulières pour accéder à des livres ou documents imprimés, en raison de l’absence de formats adaptés, de braille ou de livres audio disponibles.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Loupes électroniques",
+          "image": "./images/loupe_electronique.jpg",
+          "category": "Technologique",
+          "location": "Dans le salon sur le bureau",
+          "price": "A partir de 1500 €",
+          "description": "Une loupe électronique est un appareil portable doté d’un écran qui permet d’agrandir considérablement les textes, les photos ou les objets. Contrairement à une loupe optique classique, elle offre la possibilité de régler le niveau de zoom, de modifier les contrastes (ex: texte blanc sur fond noir) et parfois de capturer une image pour la lire plus confortablement.",
+          "instructions": [
+            "Allumer la loupe",
+            "mettre le texte devant l'objectif",
+            "régler le grossissement et le contraste."
+          ],
+          "activity": {
+            "title": "Pause lecture",
+            "instructions": "Allumez la loupe électronique en appuyant durant 5 secondes sur le bouton démarrer en haut à gauche, placer un journal devant l'objectif de la loupe et lisez un article pour vous détendre."
+          },
+          "quiz": {
+            "question": "Quel est l’avantage principal d’une loupe électronique par rapport à une loupe classique ?",
+            "options": [
+              "A) Elle peut agrandir les textes et objets avec réglage de zoom et contraste",
+              "B) Elle imprime directement les documents",
+              "C) Elle lit à voix haute tous les textes",
+              "D) Elle transforme les images en 3D"
+            ],
+            "correctAnswer": "A",
+            "feedback": "La loupe électronique permet d’ajuster le zoom et le contraste, offrant un confort visuel plus important qu’une loupe optique classique. Elle ne lit pas le texte ni n’imprime ou transforme les images en 3D."
+          }
+        },
+        {
+          "id": "",
+          "name": "Lecteur de livre PROSE",
+          "image": "./images/prose.jpg",
+          "category": "Technologique",
+          "location": "Dans le salon",
+          "price": "100 €",
+          "description": "Le lecteur de livre est une enceinte connectée à une application permettant d'écouter des livres audio facilement.",
+          "instructions": [
+            "Allumer l'appareil PROSE et le dernier livre en lecture sera lu par l'appareil."
+          ],
+          "activity": {
+            "title": "Ecouter un livre",
+            "instructions": "Démarrez l'appareil en appuyant sur le bouton de démarrage et écoutez le dernier livre enregistré."
+          },
+          "quiz": {
+            "question": "Comment fonctionne principalement un lecteur de livre audio connecté ?\n",
+            "options": [
+              "A) Il nécessite un écran tactile pour lire les textes",
+              "B) Il est relié à une application qui diffuse le livre via l’enceinte",
+              "C) Il projette le texte sur les murs pour une lecture facile",
+              "D) Il scanne automatiquement tous les livres physiques de la maison"
+            ],
+            "correctAnswer": "B",
+            "feedback": "L’appareil est connecté à une application qui permet de jouer les livres audio directement sur l’enceinte, sans avoir à manipuler un livre papier."
+          }
+        },
+        {
+          "id": "",
+          "name": "Application d'aide à la lecture ",
+          "image": "./images/be_my_eyes.jpg",
+          "category": "Technologique",
+          "location": "Sur un téléphone ou sur une tablette",
+          "price": "0 €",
+          "description": "SEEING ALL / LOOKOUT / BE MY EYES sont des applications utilisant l'IA pour lire un document qui leur est présenté en photographie. Elles sont capables, selon les applications, de décrire par commande vocale le contexte du document.",
+          "instructions": [
+            "Installer l'application",
+            "Prendre en photo le document à lire"
+          ],
+          "activity": {
+            "title": "Lecture automatique",
+            "instructions": "En utilisant la tablette du TASDA prenez en photo un document pour que l'application vous le lise vocalement."
+          },
+          "quiz": {
+            "question": "Comment fonctionnent ces applications ?",
+            "options": [
+              "A) Elles utilisent l’intelligence artificielle pour analyser une photo du document et générer une description vocale",
+              "B) Elles nécessitent un scanner spécial pour fonctionner",
+              "C) Elles projettent le texte en braille sur l’écran",
+              "D) Elles lisent uniquement les documents déjà enregistrés dans l’application"
+            ],
+            "correctAnswer": "A",
+            "feedback": "L’application analyse la photo du document grâce à l’IA et restitue les informations par commande vocale, permettant à l’utilisateur de comprendre le contenu."
+          }
+        }
+      ]
+    },
+    "loisir": {
+      "title": "Profiter de ses loisirs",
+      "description": "En 2024, une enquête menée par la Ligue Braille a révélé que 71 % des personnes aveugles ou malvoyantes estiment que leur handicap limite leur participation à des activités sociales ou culturelles. Cette situation illustre le risque majeur d’isolement dans cette population et souligne combien l’accès aux loisirs adaptés reste insuffisant. Les obstacles vont au‑delà de la simple mobilité : absence de matériel accessible, d’informations claires sur les activités disponibles.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Télécommande universelle",
+          "image": "./images/telecomande.jpg",
+          "category": "Domotique",
+          "location": "Dans le salon",
+          "price": "10 €",
+          "description": "Une télécommande universelle simplifiée possède des touches plus larges, bien espacées et fortement contrastées. Elle permet de contrôler les fonctions essentielles de la télévision (allumer/éteindre, volume, changement de chaîne) sans s’encombrer des nombreuses petites touches inutiles des télécommandes standard.",
+          "instructions": [
+            "Appuyer sur le bouton pour changer de chaine"
+          ],
+          "activity": {
+            "title": "Test des boutons",
+            "instructions": "Prenez en main la télécommande et observez les différentes fonctionnalités utilisables. "
+          },
+          "quiz": {
+            "question": "Quelles sont les caractéristiques et avantages d’une télécommande universelle simplifiée ?",
+            "options": [
+              "A) Touches plus larges et contrastées pour une meilleure visibilité",
+              "B) Permet de contrôler uniquement la télévision sans boutons inutiles",
+              "C) Peut être utilisée pour envoyer des emails ou naviguer sur internet",
+              "D) Facilite l’usage pour les personnes malvoyantes ou ayant des difficultés motrices"
+            ],
+            "correctAnswer": "A, B, D",
+            "feedback": "La télécommande universelle simplifiée est conçue pour améliorer la lisibilité et l’accessibilité grâce à ses touches larges et contrastées, pour se concentrer sur les fonctions essentielles de la télévision et pour réduire les erreurs tout en facilitant l’usage pour les personnes malvoyantes ou ayant des difficultés motrices. Elle n’offre cependant pas la possibilité d’envoyer des emails ni de naviguer sur Internet."
+          }
+        },
+        {
+          "id": "",
+          "name": "Jeux de dame",
+          "image": "./images/dame.jpg",
+          "category": "Non technologique ",
+          "location": "Dans le salon",
+          "price": "120 €",
+          "description": "Les jeux adaptés permettent de retrouver ou de maintenir le plaisir de jouer malgré des troubles visuels ou une imprécision du geste. Le plateau dont chacune des 64 cases est percée en son centre pour le positionnement des pièces permet de les distinguer tactilement, l’ensemble des pions possèdent un picot sous leur base afin de les positionner sur le plateau.",
+          "instructions": [
+            "Jouer directement avec ou sans lunettes "
+          ],
+          "activity": {
+            "title": "Jeu de la dame",
+            "instructions": "Prenez le temps de jouer aux dames en simulant des coups en utilisant des lunettes de simulation basse vision si vous le souhaitez."
+          },
+          "quiz": {
+            "question": "Comment le plateau de ce type de jeu est-il conçu ?",
+            "options": [
+              "A) Les cases sont colorées avec des motifs fluorescents",
+              "B) Chaque case est percée en son centre pour positionner les pions grâce à un picot",
+              "C) Les cases sont inclinées pour faciliter le déplacement des pions",
+              "D) Les cases sont équipées de capteurs électroniques"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Chaque case possède un trou central et chaque pion a un picot sous sa base, ce qui permet de positionner les pièces tactilement et d’éviter qu’elles ne glissent."
+          }
+        },
+        {
+          "id": "",
+          "name": "Loupe manuelle",
+          "image": "./images/loupe.jpg",
+          "category": "Non technologique",
+          "location": "Salon sur le bureau",
+          "price": "115 €",
+          "description": "La loupe manuelle permet de grossir les caractères d’un texte pour en faciliter la lecture. Le grossissement est de x4 sur ce modèle et il permet d'allumer une lumière.\n",
+          "instructions": [
+            "utiliser la loupe ",
+            "allumer la lumière si désiré"
+          ],
+          "activity": {
+            "title": "Grossissement ",
+            "instructions": "Prendre un magazine et lire un article en utilisant la loupe pour grossir le texte. Vous pouvez utiliser la lumière pour rendre la lecture plus agréable."
+          },
+          "quiz": {
+            "question": "Pourquoi une personne malvoyante pourrait-elle préférer cette loupe manuelle plutôt qu’une loupe électronique ?",
+            "options": [
+              "A) Elle est plus légère et facilement transportable",
+              "B) Elle permet de lire des documents numériques directement",
+              "C) Elle offre un grossissement illimité",
+              "D) Elle peut enregistrer les textes pour les lire plus tard"
+            ],
+            "correctAnswer": "A",
+            "feedback": "La loupe manuelle est plus compacte, légère et pratique à utiliser n’importe où, contrairement à la loupe électronique qui peut être plus encombrante et coûteuse. Elle ne lit pas automatiquement ni n’enregistre les textes."
+          }
+        }
+      ]
+    },
+    "sant__et_bien__tre": {
+      "title": "Se maintenir en bonne santé",
+      "description": "Après l’apparition d’un trouble de la vision, l’accès aux soins et à la médication au domicile devient un défi concret pour de nombreuses personnes. La lecture des étiquettes, des notices et des dates de péremption peut être particulièrement difficile : dans une étude, plus de 60 % des personnes malvoyantes ou aveugles ont déclaré avoir besoin d’aide pour reconnaître leurs médicaments.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Thermomètre parlant",
+          "image": "./images/thermometre.jpg",
+          "category": "Non technologique",
+          "location": "Dans la salle de bain",
+          "price": "18 €",
+          "description": "Le thermomètre parlant permet d’avoir un retour vocal de la mesure de température prise. Prise buccale et axillaire possible. il y a un bouton bleu On/Off et un bouton jaune plus petit pour le retour vocal.",
+          "instructions": [
+            "Cliquez sur le bouton bleu On/Off pour démarrer le thermomètre ",
+            "Pressez le bouton jaune pour le retour vocal"
+          ],
+          "activity": {
+            "title": "Chaleur ? ",
+            "instructions": "Prendre sa température : appuyez sur le bouton bleu On/Off pour allumer le thermomètre, puis placez-le sans contact direct avec la peau (pour des raisons d’hygiène). Enfin, appuyez sur le bouton jaune pour obtenir le retour vocal de la mesure."
+          },
+          "quiz": {
+            "question": "Pourquoi un thermomètre parlant est particulièrement utile pour les personnes malvoyantes ?",
+            "options": [
+              "A) Il affiche des graphiques détaillés sur l’écran",
+              "B) Il annonce la température à voix haute et évite ainsi la lecture de chiffres",
+              "C) Il permet de mesurer la température de la pièce",
+              "D) Il colore le liquide en fonction de la chaleur"
+            ],
+            "correctAnswer": "B",
+            "feedback": "Le retour vocal permet à une personne malvoyante de connaître immédiatement la température sans avoir besoin de lire l’écran."
+          }
+        },
+        {
+          "id": "",
+          "name": "Tensiomètre parlant",
+          "image": "./images/tensiometre.jpg",
+          "category": "Non technologique",
+          "location": "Dans la chambre",
+          "price": "55 €",
+          "description": "Le tensiomètre parlant mesure de la tension artérielle et le pouls de manière entièrement automatisée au niveau du bras. Il annonce la mesure vocalement.",
+          "instructions": [
+            "Enfiler le brassard",
+            "appuyer sur Start ",
+            "rester immobile jusqu'à l'annonce du résultat."
+          ],
+          "activity": {
+            "title": "Prise de tension",
+            "instructions": "Enfilez le brassard autour de votre bras sans vêtement, appuyez sur start (cela peut serrer fortement) restez immobile jusqu'à l'annonce du résultat."
+          },
+          "quiz": {
+            "question": "Pourquoi le retour vocal est-il utile ?",
+            "options": [
+              "A) Il permet de lire les mesures sans regarder l’écran",
+              "B) Il rend l’appareil plus esthétique",
+              "C) Il aide les personnes malvoyantes ou âgées à surveiller leur santé en autonomie",
+              "D) Il permet de mémoriser automatiquement toutes les mesures"
+            ],
+            "correctAnswer": "A, C",
+            "feedback": "Le retour vocal permet de connaître ses mesures sans lire l’écran, ce qui est pratique pour les personnes malvoyantes ou ayant des difficultés visuelles, et favorise une autonomie dans le suivi de la santé."
+          }
+        },
+        {
+          "id": "",
+          "name": "Applications d'aide à la lecture",
+          "image": "./images/be_my_eyes.jpg",
+          "category": "Technologique",
+          "location": "Sur un téléphone ou sur la tablette ",
+          "price": "0 €",
+          "description": "SEEING ALL / LOOKOUT / BE MY EYES sont des applications utilisant l'IA pour lire un document qui leur est présenté en photographie. Elles sont capables, selon les applications, de décrire par commande vocale le contexte du document.",
+          "instructions": [
+            "Installer l'application",
+            "Prendre en photo le document à lire"
+          ],
+          "activity": {
+            "title": "Lecture d'une notice",
+            "instructions": "En utilisant la tablette du TASDA, prenez en photo une notice de médicament pour que l'application vous la lise vocalement."
+          },
+          "quiz": {
+            "question": "Quel est le principal bénéfice santé de ces applications pour une personne malvoyante ?",
+            "options": [
+              "A) Poser un diagnostic précis",
+              "B) Réduire les risques d’erreur liés à la prise de médicaments",
+              "C) Remplacer le suivi médical",
+              "D) Mesurer des constantes vitales"
+            ],
+            "correctAnswer": "B",
+            "feedback": "En facilitant la lecture des noms de médicaments, dates, dosages ou avertissements, ces applications contribuent à sécuriser la prise de traitement et à préserver l’autonomie."
+          }
+        },
+        {
+          "id": "",
+          "name": "Lecteur d'étiquette parlant - PenFriend",
+          "image": "./images/penfriend.jpg",
+          "category": "Non Technologique",
+          "location": "Dans la cuisine",
+          "price": "140 €",
+          "description": "Le lecteur d’étiquettes parlant permet d’identifier tous les objets de la vie quotidienne (médicaments, boîtes de conserve ...) On place une étiquette sur l’objet puis on enregistre un message audio correspondant. Lorsqu’on posera le lecteur sur l’étiquette, on entendra le message.",
+          "instructions": [
+            "Allumer le stylo PenFriend.",
+            "Le placer sur l'étiquette placée en amont et écouter le message préenregistré "
+          ],
+          "activity": {
+            "title": "Connaitre le pilulier",
+            "instructions": "Prendre le pilulier ainsi que le stylo, allumer le stylo et lire une des cases du pilulier en plaçant le stylo sur une des étiquettes. "
+          },
+          "quiz": {
+            "question": "Quelle limite importante doit être prise en compte lors de l’utilisation du lecteur d’étiquettes parlant pour des produits de santé ?\n",
+            "options": [
+              "A) Les messages audio doivent être enregistrés correctement et mis à jour",
+              "B) Le lecteur fonctionne uniquement avec Internet",
+              "C) Les étiquettes se lisent automatiquement sans enregistrement",
+              "D) Le lecteur interprète les prescriptions médicales"
+            ],
+            "correctAnswer": "A",
+            "feedback": "La fiabilité du dispositif dépend du message enregistré par l’utilisateur. En cas de changement de traitement ou de date de péremption, le message doit être réenregistré pour éviter toute erreur."
+          }
+        }
+      ]
+    },
+    "organisation_du_quotidien_et_gestion_du_temps": {
+      "title": "Organiser son quotidien et gérer son temps",
+      "description": "Une étude révèle que près de 70 % des personnes malvoyantes ou aveugles rencontrent des difficultés à gérer efficacement leur emploi du temps sans aides adaptées, et environ 60 % signalent que ces difficultés allongent le temps nécessaire pour accomplir des tâches domestiques ou administratives. L’absence d’outils adaptés, comme des agendas tactiles, des applications vocales ou des systèmes de repérage accessibles, réduit l’autonomie et peut augmenter la fatigue quotidienne.",
+      "tools": [
+        {
+          "id": "",
+          "name": "Réveil parlant ",
+          "image": "./images/reveil.jpg",
+          "category": "Non technologique ",
+          "location": "Dans la chambre sur la table de nuit ",
+          "price": "37 €",
+          "description": "Le réveil parlant permet d’avoir une indication vocale de l’heure sur pression d’un bouton ou automatiquement à heure fixe.",
+          "instructions": [
+            "Appuyer sur le bouton au dessus du réveil pour lancer la lecture orale de l'heure "
+          ],
+          "activity": {
+            "title": "Quelle heure est-il ? ",
+            "instructions": "Appuyez sur le bouton au dessus du réveil pour lancer la lecture orale de l'heure. "
+          },
+          "quiz": {
+            "question": "Quelle limite du réveil parlant doit être prise en compte dans son usage quotidien ?",
+            "options": [
+              "A) Il ne peut pas annoncer l’heure",
+              "B) Il remplace un assistant vocal",
+              "C) Il fonctionne uniquement en journée",
+              "D) Il dépend de la qualité de la voix et du volume sonore réglé"
+            ],
+            "correctAnswer": "D",
+            "feedback": "Pour être efficace, l’annonce vocale doit être audible et claire ; un volume mal réglé peut limiter son utilité."
+          }
+        },
+        {
+          "id": "",
+          "name": "Montre parlante",
+          "image": "./images/montre.jpg",
+          "category": "Non technologique",
+          "location": "Dans la chambre sur la table de nuit ",
+          "price": "30 €",
+          "description": "La montre parlante permet d’avoir une indication vocale de l’heure sur pression d’un bouton ou selon le modèle automatiquement à heure fixe.",
+          "instructions": [
+            "Indication vocale de l’heure sur pression d’un bouton à gauche de la molette pour changer l'heure."
+          ],
+          "activity": {
+            "title": "Quelle heure est-il ?",
+            "instructions": "Mettre la montre et presser le bouton qui est à gauche de la molette pour changer l'heure pour activer la commande vocale."
+          },
+          "quiz": {
+            "question": "Quelle limite doit être prise en compte lors de l’utilisation d’une montre parlante ?\n",
+            "options": [
+              "A) Elle nécessite une connexion Internet",
+              "B) Elle remplace un suivi médical",
+              "C) Elle dépend de la clarté du volume sonore pour être compréhensible",
+              "D) Elle ne fonctionne qu’à l’intérieur"
+            ],
+            "correctAnswer": "C",
+            "feedback": "Pour être efficace, la montre parlante doit avoir un volume audible et une voix claire, sinon l’information peut être difficile à comprendre."
+          }
+        },
+        {
+          "id": "",
+          "name": "Assistant vocal Google Home",
+          "image": "./images/assistant.jpg",
+          "category": "Technologique",
+          "location": "Dans la chambre sur la table de nuit ",
+          "price": "A partir de 60 €",
+          "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour effectuer des tâches, répondre à des questions ou contrôler des appareils. Il peut permettre de gérer à distance, par la voix, des objets connectés. Ici, il peut servir à activer plusieurs objets dans l'appartement, faire une liste de course ou de tâches.",
+          "instructions": [
+            "Dire \"ok google\" ",
+            "Demander d'ajouter des éléments à sa liste de course"
+          ],
+          "activity": {
+            "title": "Liste de course",
+            "instructions": "Dire \"ok google\" puis demandez d'ajouter des éléments à votre liste de course. "
+          },
+          "quiz": {
+            "question": "Comment un assistant vocal comme Google Home peut-il aider à mieux gérer son temps au quotidien ? ",
+            "options": [
+              "A) En programmant des rappels et alarmes pour ne rien oublier",
+              "B) En remplaçant complètement l’agenda ou le calendrier papier",
+              "C) En créant des listes de tâches ou de courses à compléter",
+              "D) En allumant ou éteignant les appareils automatiquement"
+            ],
+            "correctAnswer": "A,C,D",
+            "feedback": "L’assistant vocal aide à anticiper et organiser les tâches, et à contrôler certains appareils à distance, mais il ne remplace pas entièrement un agenda ou un planning écrit."
+          }
+        }
+      ]
+    }
+  },
+  "quizQuestions": [
+    {
+      "question": "Quel élément est le plus important pour vous ?",
+      "options": [
+        "Mes déplacements dans mon habitat.",
+        "Ne pas me sentir trop seul.",
+        "Avoir la possibilité de me détendre.",
+        "Prendre soin de ma santé."
+      ],
+      "optionThemes": [
+        [
+          "se_d_placer"
+        ],
+        [
+          "rester_en_lien"
+        ],
+        [
+          "loisir"
+        ],
+        [
+          "sant__et_bien__tre"
+        ]
+      ]
+    },
+    {
+      "question": "Quelle solution d'assistance privilégiez-vous ?",
+      "options": [
+        "Simplifier le contact avec mes proches.",
+        "Bénéficier d'aides vocales pour cuisiner.",
+        "Une aide pour lire mes livres, journaux ou magazines.",
+        "Avoir une aide pour organiser mes tâches."
+      ],
+      "optionThemes": [
+        [
+          "rester_en_lien"
+        ],
+        [
+          "cuisiner__manger"
+        ],
+        [
+          "lecture"
+        ],
+        [
+          "organisation_du_quotidien_et_gestion_du_temps"
+        ]
+      ]
+    },
+    {
+      "question": "Dans quelle situation souhaitez-vous être plus autonome ?",
+      "options": [
+        "Avoir une tenue correcte sans aide.",
+        "Me préparer à manger sans rien renverser.",
+        "Lire mes documents administratifs.",
+        "Faire mon planning ou ma liste de courses en toute autonomie."
+      ],
+      "optionThemes": [
+        [
+          "s_habiller"
+        ],
+        [
+          "cuisiner__manger"
+        ],
+        [
+          "lecture"
+        ],
+        [
+          "organisation_du_quotidien_et_gestion_du_temps"
+        ]
+      ]
+    },
+    {
+      "question": "Dans quel type de tâche aimeriez-vous avoir plus confiance en vous ?",
+      "options": [
+        "Me déplacer facilement et sans risque.",
+        "Ne pas me tromper de vêtement.",
+        "Utiliser la télécommande sans me tromper de bouton.",
+        "Être certain du nombre de médicaments que je prends."
+      ],
+      "optionThemes": [
+        [
+          "se_d_placer"
+        ],
+        [
+          "s_habiller"
+        ],
+        [
+          "loisir"
+        ],
+        [
+          "sant__et_bien__tre"
+        ]
+      ]
+    }
+  ]
+}

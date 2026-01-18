@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Unapparté</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="admin-header">
+            <h1>Administration Unapparté</h1>
+        </header>
+
+        <section class="admin-section" style="border: 2px dashed #007bff; background: #f0f8ff;">
+            <h3>📸 Médiathèque</h3>
+            
+            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 20px;">
+                <input type="file" id="imageUploadInput" accept="image/*" class="full-width-input" style="margin-bottom: 0;">
+                <button onclick="window.uploadImage()" class="primary-button">⬆️ Envoyer</button>
+            </div>
+        
+            <h4>Images disponibles :</h4>
+            <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">
+                ⚠️ Attention : Renommer ou supprimer une image cassera le lien sur les outils qui l'utilisent.
+            </p>
+            
+            <div id="adminImagesGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px;">
+                </div>
+        </section>
+
+        <div class="admin-tabs">
+            <button class="tab-button active" onclick="switchTab('themes')">Gestion des Thèmes</button>
+            <button class="tab-button" onclick="switchTab('quiz')">Gestion du Quiz</button>
+        </div>
+
+        <div id="view-themes" class="tab-content active">
+            <section class="admin-section">
+                <h2>Thèmes existants</h2>
+                <div id="adminThemesList"></div>
+                <div class="add-form">
+                    <h3>Ajouter un nouveau thème</h3>
+                    <input id="newThemeName" placeholder="Nom du thème" class="full-width-input">
+                    <textarea id="newThemeDescription" placeholder="Description du thème..." class="full-width-input" rows="3"></textarea>
+                    <button id="addThemeBtn" class="primary-button">Ajouter thème</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="view-quiz" class="tab-content" style="display: none;">
+            <section class="admin-section">
+                <h2>Questions existantes</h2>
+                <div id="adminQuestionsList" class="questions-container"></div>
+                <div class="add-form">
+                    <h3>Ajouter une nouvelle question</h3>
+                    <input id="newQuestionText" placeholder="Nouvelle question" class="full-width-input">
+                    <div class="simple-options">
+                        <div class="option-row">
+                            <input id="newQuestionOption1" placeholder="Option 1" class="option-input">
+                            <input id="newQuestionOption2" placeholder="Option 2" class="option-input">
+                        </div>
+                        <div class="option-row">
+                            <input id="newQuestionOption3" placeholder="Option 3" class="option-input">
+                            <input id="newQuestionOption4" placeholder="Option 4" class="option-input">
+                        </div>
+                    </div>
+                    <button id="addQuestionBtn" class="primary-button">Ajouter question</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="themeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalThemeTitle">Modifier les thèmes associés</h3>
+            <div id="modalThemeSelection" class="modal-theme-selection"></div>
+            <div class="modal-actions">
+                <button id="saveThemesBtn" class="primary-button">Enregistrer</button>
+                <button id="cancelThemesBtn" class="secondary-button">Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolEditModal" class="modal">
+        <div class="modal-content large-modal">
+            <span class="close-button" onclick="closeToolModal()">&times;</span>
+            <h3 id="toolEditTitle">Modifier l'outil</h3>
+            
+            <div class="edit-form-scroll">
+                <fieldset>
+                    <legend>Informations Générales</legend>
+                    <div class="form-group">
+                        <label>Nom de l'outil :</label>
+                        <input type="text" id="toolName" class="full-width-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nom de l'image (fichier.jpg) :</label>
+                        <div style="display: flex; align-items: center;">
+                            <span style="background: #eee; padding: 10px; border: 1px solid #ced4da; border-right: none; border-radius: 6px 0 0 6px; color: #555;">./images/</span>
+                            <input type="text" id="toolImageName" class="full-width-input" style="border-radius: 0 6px 6px 0;" placeholder="ex: assistant.jpg">
+                        </div>
+                    </div>
+
+                    <div class="form-group"><label>Catégorie :</label><input type="text" id="toolCategory" class="full-width-input"></div>
+                    <div class="form-group"><label>Emplacement :</label><input type="text" id="toolLocation" class="full-width-input"></div>
+                    <div class="form-group"><label>Prix :</label><input type="text" id="toolPrice" class="full-width-input"></div>
+                    <div class="form-group"><label>Description :</label><textarea id="toolDescription" class="full-width-input" rows="3"></textarea></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Instructions</legend>
+                    <textarea id="toolInstructions" class="full-width-input" rows="4"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Activité</legend>
+                    <div class="form-group"><label>Titre :</label><input type="text" id="toolActivityTitle" class="full-width-input"></div>
+                    <div class="form-group"><label>Consignes :</label><textarea id="toolActivityInstructions" class="full-width-input" rows="2"></textarea></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quiz</legend>
+                    <div class="form-group"><label>Question :</label><textarea id="toolQuizQuestion" class="full-width-input" rows="2"></textarea></div>
+                    
+                    <div class="form-group"><label>Options (séparées par des virgules) :</label><textarea id="toolQuizOptions" class="full-width-input" rows="3" placeholder="Ex: Option A, Option B, Option C"></textarea></div>
+                    
+                    <div class="form-group"><label>Réponse correcte :</label><input type="text" id="toolQuizAnswer" class="full-width-input"></div>
+                    <div class="form-group"><label>Feedback :</label><textarea id="toolQuizFeedback" class="full-width-input" rows="2"></textarea></div>
+                </fieldset>
+            </div>
+
+            <div class="modal-actions">
+                <button onclick="saveToolData()" class="primary-button">Enregistrer l'outil</button>
+                <button onclick="closeToolModal()" class="secondary-button">Annuler</button>
+            </div>
+        </div>
+    </div>
+    <script src="admin-api.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
