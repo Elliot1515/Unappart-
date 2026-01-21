@@ -19,7 +19,7 @@ const ADMIN_PASSWORD = "ensc";
 // --- 1. SERVIR LE SITE WEB (Frontend) ---
 // Sert le dossier "public/main" (index.html, script.js...) à la racine du site
 app.use(express.static(path.join(__dirname, "../public/main")));
-
+console.log("fichier images = " + __dirname);
 // Sert le dossier "public/admin" sur l'adresse /admin
 app.use("/admin", express.static(path.join(__dirname, "../public/admin")));
 
