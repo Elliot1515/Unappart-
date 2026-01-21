@@ -118,7 +118,7 @@ function renderImagesGrid(images) {
     div.style.cssText =
       "border: 1px solid #ddd; padding: 10px; background: #fff; border-radius: 6px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);";
 
-    const imagePath = `./public/main/images/${filename}`;
+    const imagePath = `../main/images/${filename}`;
 
     div.innerHTML = `
             <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; background: #f9f9f9; border-radius: 4px;">
@@ -468,8 +468,7 @@ function openToolModal(key, idx) {
 
   // Gestion affichage image (enlève ./images/)
   let imgVal = d.image || "";
-  if (imgVal.startsWith("./public/images/"))
-    imgVal = imgVal.replace("./public/images/", "");
+  if (imgVal.startsWith("./images/")) imgVal = imgVal.replace("./images/", "");
   document.getElementById("toolImageName").value = imgVal;
 
   document.getElementById("toolCategory").value = d.category || "";
@@ -506,7 +505,7 @@ async function saveToolData() {
   if (!requestPassword()) return;
 
   const rawImg = document.getElementById("toolImageName").value.trim();
-  const finalImg = rawImg ? `./public/images/${rawImg}` : "";
+  const finalImg = rawImg ? `./images/${rawImg}` : "";
 
   const updatedTool = {
     id: toolsData[editingThemeKey].tools[editingToolIndex].id || "",
