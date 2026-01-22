@@ -471,13 +471,9 @@ function openToolModal(key, idx) {
   if (imgVal.startsWith("./images/")) imgVal = imgVal.replace("./images/", "");
   document.getElementById("toolImageName").value = imgVal;
 
-  document.getElementById("toolCategory").value = d.category || "";
   document.getElementById("toolLocation").value = d.location || "";
   document.getElementById("toolPrice").value = d.price || "";
   document.getElementById("toolDescription").value = d.description || "";
-  document.getElementById("toolInstructions").value = (
-    d.instructions || []
-  ).join("\n");
 
   const act = d.activity || {};
   document.getElementById("toolActivityTitle").value = act.title || "";
@@ -511,14 +507,9 @@ async function saveToolData() {
     id: toolsData[editingThemeKey].tools[editingToolIndex].id || "",
     name: document.getElementById("toolName").value,
     image: finalImg,
-    category: document.getElementById("toolCategory").value,
     location: document.getElementById("toolLocation").value,
     price: document.getElementById("toolPrice").value,
     description: document.getElementById("toolDescription").value,
-    instructions: document
-      .getElementById("toolInstructions")
-      .value.split("\n")
-      .filter((l) => l.trim()),
     activity: {
       title: document.getElementById("toolActivityTitle").value,
       instructions: document.getElementById("toolActivityInstructions").value,

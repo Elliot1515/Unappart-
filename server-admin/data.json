@@ -8,14 +8,9 @@
           "id": "assistant_vocal",
           "name": "Assistant vocal",
           "image": "./images/assistant.jpg",
-          "category": "Technologique",
           "location": "Dans la chambre sur la table de nuit",
           "price": "À partir de 60€",
-          "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour effectuer des tâches, répondre à des questions ou contrôler des appareils. Il peut permettre de gérer à distance, par la voix, des objets connectés. Il se présente sous la forme d'une enceinte.",
-          "instructions": [
-            "Dire \"ok Google\" ",
-            "Donner l'action que l'on souhaite qu'il réalise"
-          ],
+          "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour effectuer des tâches, répondre à des questions ou contrôler des appareils. Il peut permettre de gérer à distance, par la voix, des objets connectés. Il se présente sous la forme d'une enceinte.",     
           "activity": {
             "title": "Rester en lien avec ses proches",
             "instructions": "Tester comment l’assistant vocal permet d’envoyer un message ou passer un appel rapidement."
@@ -36,13 +31,9 @@
           "id": "adaptative_phone",
           "name": "Téléphones adaptés (Doro, Binom, Olga)",
           "image": "./images/telephone.jpg",
-          "category": "Technologique",
           "location": "Sur le bureau",
           "price": "De 100 à 500€ selon les fonctionnalités.",
           "description": "Un téléphone adapté permet à une personne malvoyante d’utiliser plus facilement les fonctions essentielles grâce aux réglages d’accessibilité (agrandissement des caractères, navigation simplifiée, commande vocale).\nSi ces réglages ne suffisent pas, plusieurs solutions existent : \n- Téléphones adaptés d’origine : touches larges et contrastées, retour vocal, raccourcis d’appels (ex. Binom à clapet, Doro mobiles). \n- Smartphones simplifiés : interface agrandie et accessible, parfois centrée sur la voix (ex. Binom smartphone, Doro smartphones, Olga). \n- Applications d’accessibilité : pour modifier l’affichage ou vocaliser l’écran (ex. Big Launcher, VoiceOver pour iPhone, TalkBack pour Android).",
-          "instructions": [
-            "Screenshot arrive bientot"
-          ],
           "activity": {
             "title": "Appeler une personne",
             "instructions": "Appeler un proche en utilisant un raccourci ou la commande vocale. "
@@ -63,13 +54,9 @@
           "id": "door_locker",
           "name": "Interphone et serrure conntecté (Nuki)",
           "image": "./images/locker.jpg",
-          "category": "Technologique",
           "location": "A l'entrée ",
           "price": "A partir de 80 € ",
           "description": "Permet une ouverture de la porte à distance, même lorsque la personne se trouve à l’intérieur du logement ou l'ouverture à distance par un tiers (proche, aidant ou personne de confiance).",
-          "instructions": [
-            "Screenshot arrive bientot"
-          ],
           "activity": {
             "title": "Déverouillage ",
             "instructions": "Effectuez un verrouillage ainsi qu'un déverrouillage de la serrure. "
@@ -96,11 +83,9 @@
           "id": "",
           "name": "Éclairages réglables (spots connectés, baguette LED, plafonnier)",
           "image": "./images/lumiere.jpg",
-          "category": "Domotique",
           "location": "Dans la cuisine",
           "price": "Environ 30 euros chacun et  jusqu'à 200€ pour un système complet.",
           "description": "Un bon éclairage est important pour les personnes avec une déficience visuelle : il facilite la lecture, les déplacements et toutes les activités quotidiennes, tout en limitant la fatigue visuelle. L’adaptation de la lumière augmente le contraste des objets et améliore la sécurité en réduisant les risques de chute et d’accident. Un éclairage homogène, sans reflets ni scintillements, permet aussi d’éviter l’éblouissement, souvent gênant pour les personnes ayant une déficience visuelle.",
-          "instructions": [],
           "activity": {
             "title": "Test de lumières",
             "instructions": "Régler la luminosité d'un spot dans la cuisine pour préparer le repas sans éblouissement."
@@ -121,14 +106,9 @@
           "id": "",
           "name": "Assistant vocal Google Home (commande des volets et lumières)",
           "image": "./images/assistant.jpg",
-          "category": "Technologique",
           "location": "Dans la chambre",
           "price": "À partir de 60 €",
           "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour\neffectuer des tâches, répondre à des questions ou contrôler des appareils.\nIl peut permettre de gérer à distance, par la voix, des objets connectés.",
-          "instructions": [
-            "Dire : “Ok Google\"",
-            "Demandez l'action que vous souhaitez réaliser"
-          ],
           "activity": {
             "title": "Allumer les lumières ",
             "instructions": "Demander d'éteindre puis de rallumer la lumière."
@@ -149,11 +129,9 @@
           "id": "",
           "name": "Téléassistance",
           "image": "./images/teleassistance.jpg",
-          "category": "Technologique",
           "location": "Partout",
           "price": "A partir de 25 à 50 €",
           "description": "La téléassistance permet d'alerter en cas de chute ou d'accident pour rassurer la personne et ses aidants et pour permettre une intervention rapide pour les cas graves.\nIl peut être porté sous forme de médaillon. ",
-          "instructions": [],
           "activity": {
             "title": "Porter le médaillon",
             "instructions": "Essayez le médaillon pour comprendre la sensation de le porter"
@@ -180,16 +158,9 @@
           "id": "color_detector",
           "name": "Détecteur de couleurs (Colorino)",
           "image": "./images/colorino.jpg",
-          "category": "technologique",
           "location": "Dans la salle de bain",
           "price": "219€",
           "description": "Le détecteur de couleurs sonore permet de pouvoir choisir une couleur souhaitée et de repérer les points ou les sources lumineuses. Il peut être une aide à l'habillage.",
-          "instructions": [
-            "Allumer l'appareil.",
-            "Placer la sonde sur le tissu.",
-            "Appuyer sur le bouton de scan.",
-            "Écouter le nom de la couleur annoncée."
-          ],
           "activity": {
             "title": "Associer deux chaussettes de la même couleur",
             "instructions": "Utilisez le détecteur de couleurs pour trouver et associer deux chaussettes de la même couleur dans un panier contenant plusieurs paires de couleurs différentes."
@@ -210,15 +181,9 @@
           "id": "socks_organizer",
           "name": "Attache-chaussettes",
           "image": "./images/chaussette.jpg",
-          "category": "non-technologique",
           "location": "Dans la salle de bain",
           "price": "6€ les 10",
           "description": "Ces petites pièces de plastique en forme de cintre permettent d'attacher les chaussettes d'une même paire, de les laver en machine et de les sécher sans les dissocier.",
-          "instructions": [
-            "Attacher les deux chaussettes d'une paire avant de les mettre dans le panier à linge sale.",
-            "Les laver et sécher ainsi.",
-            "Les ranger sans les détacher."
-          ],
           "activity": {
             "title": "Association de chaussettes",
             "instructions": "Prenez 2 paires de chaussettes différentes et utilisez les attaches-chaussettes pour les assembler par paires."
@@ -239,16 +204,9 @@
           "id": "clothing_tags",
           "name": "Balises Vocaléo pour vêtements",
           "image": "./images/vocaleo.jpg",
-          "category": "technologique",
           "location": "Dans la chambre",
           "price": "5 balises vêtement à 15€",
           "description": "Les balises permettent d'identifier des objets. Elles sont utilisées avec l'application smartphone VOCALEO qui permet d'écouter un mémo vocal enregistré et attribuer à une balise. Si ce sont des balises spéciale vêtement elles résistent au passage à la machine à laver.",
-          "instructions": [
-            "Télécharger l'appli 'Vocaléo'.",
-            "Coller/coudre une balise sur un vêtement.",
-            "Enregistrer un message personnalisé ('Robe bleue d'été', 'Costard rendez-vous').",
-            "Passer son smartphone près de la balise pour écouter."
-          ],
           "activity": {
             "title": "Retrouver un vêtement ",
             "instructions": "Cachez une chaussette parmi d'autres dans la panière. Utilisez l'application Vocaléo pour retrouver le vêtement spécifique en scannant les balises avec votre smartphone."
@@ -275,13 +233,9 @@
           "id": "",
           "name": "Tapis de protection pour plaque à induction",
           "image": "./images/tapis.jpg",
-          "category": "Non technologique ",
           "location": "dans la cuisine sur les plaques",
           "price": "9 €",
           "description": "Le tapis de protection de plaque à induction est vendu en tant que moyen de protection contre les rayures. Il permet ici de marquer l’emplacement des plaques à induction et selon les modèles il peut être anti-dérapant.",
-          "instructions": [
-            "le placer sur les plaques"
-          ],
           "activity": {
             "title": "Test de dérapage",
             "instructions": "Poser une casserole ou une poêle sur la plaque protégée et essayer de la faire glisser par inadvertance. "
@@ -302,13 +256,9 @@
           "id": "",
           "name": "Repères tactiles",
           "image": "./images/pate.jpg",
-          "category": "Non technologique",
           "location": "dans la cuisine sur les plaques notamment",
           "price": "8 €",
           "description": "La pâte adhésive ou les pastilles adhésives permettent de créer des repères tactiles sur n’importe quel objet, bouton ou surfaces (Papier, bois, verre, métal, etc). Elle permet de marquer l’emplacement des réglages d’un appareil en dessinant en relief.",
-          "instructions": [
-            "Appliquer de la pate adhesive sur l'emplacement que l'on veut remarquer"
-          ],
           "activity": {
             "title": "Test de toucher",
             "instructions": "En fermant les yeux ou en utilisant les lunettes de modification de la vision essayez de repérer les différents emplacement de la pate adhésive sur les plaques. "
@@ -329,13 +279,9 @@
           "id": "",
           "name": "Balance parlante",
           "image": "./images/balance.jpg",
-          "category": "Non technologique",
           "location": "dans la cuisine sur le plan de travail",
           "price": "40 €",
           "description": "Une balance de cuisine parlante est un outil essentiel pour les personnes malvoyantes souhaitant cuisiner avec précision. Elle annonce vocalement le poids des ingrédients, évitant ainsi d’avoir à lire un écran parfois trop petit ou peu contrasté. Elle permet de mesurer des aliments solides ou liquides en toute autonomie.",
-          "instructions": [
-            "L’allumer, poser le contenant, faire la tare, ajouter l’aliment, écouter le poids."
-          ],
           "activity": {
             "title": "Pesage ",
             "instructions": "Mettre un objet dans le contenant de la balance et le peser."
@@ -356,13 +302,9 @@
           "id": "",
           "name": "Indicateur de niveaude liquide",
           "image": "./images/indicateur.jpg",
-          "category": "Non technologique",
           "location": "dans la cuisine",
           "price": "15 €",
           "description": "L’indicateur de niveau de liquide est un petit appareil qui se place sur le bord d’un verre ou d’une tasse. Il émet un signal sonore ou vibratoire lorsque le liquide atteint le niveau souhaité, permettant ainsi de remplir ses boissons en toute sécurité sans déborder.",
-          "instructions": [
-            "Placer l'indicateur sur le bord du verre et verser le liquide jusqu'à ce que l'appareil sonne"
-          ],
           "activity": {
             "title": "Ne pas déborder",
             "instructions": "Verser de l'eau dans une tasse avec l'indicateur et arrêter des qu'il sonne."
@@ -389,15 +331,9 @@
           "id": "",
           "name": "Loupes électroniques",
           "image": "./images/loupe_electronique.jpg",
-          "category": "Technologique",
           "location": "Dans le salon sur le bureau",
           "price": "A partir de 1500 €",
           "description": "Une loupe électronique est un appareil portable doté d’un écran qui permet d’agrandir considérablement les textes, les photos ou les objets. Contrairement à une loupe optique classique, elle offre la possibilité de régler le niveau de zoom, de modifier les contrastes (ex: texte blanc sur fond noir) et parfois de capturer une image pour la lire plus confortablement.",
-          "instructions": [
-            "Allumer la loupe",
-            "mettre le texte devant l'objectif",
-            "régler le grossissement et le contraste."
-          ],
           "activity": {
             "title": "Pause lecture",
             "instructions": "Allumez la loupe électronique en appuyant durant 5 secondes sur le bouton démarrer en haut à gauche, placer un journal devant l'objectif de la loupe et lisez un article pour vous détendre."
@@ -418,13 +354,9 @@
           "id": "",
           "name": "Lecteur de livre PROSE",
           "image": "./images/prose.jpg",
-          "category": "Technologique",
           "location": "Dans le salon",
           "price": "100 €",
           "description": "Le lecteur de livre est une enceinte connectée à une application permettant d'écouter des livres audio facilement.",
-          "instructions": [
-            "Allumer l'appareil PROSE et le dernier livre en lecture sera lu par l'appareil."
-          ],
           "activity": {
             "title": "Ecouter un livre",
             "instructions": "Démarrez l'appareil en appuyant sur le bouton de démarrage et écoutez le dernier livre enregistré."
@@ -445,14 +377,9 @@
           "id": "",
           "name": "Application d'aide à la lecture ",
           "image": "./images/be_my_eyes.jpg",
-          "category": "Technologique",
           "location": "Sur un téléphone ou sur une tablette",
           "price": "0 €",
           "description": "SEEING ALL / LOOKOUT / BE MY EYES sont des applications utilisant l'IA pour lire un document qui leur est présenté en photographie. Elles sont capables, selon les applications, de décrire par commande vocale le contexte du document.",
-          "instructions": [
-            "Installer l'application",
-            "Prendre en photo le document à lire"
-          ],
           "activity": {
             "title": "Lecture automatique",
             "instructions": "En utilisant la tablette du TASDA prenez en photo un document pour que l'application vous le lise vocalement."
@@ -479,13 +406,9 @@
           "id": "",
           "name": "Télécommande universelle",
           "image": "./images/telecomande.jpg",
-          "category": "Domotique",
           "location": "Dans le salon",
           "price": "10 €",
           "description": "Une télécommande universelle simplifiée possède des touches plus larges, bien espacées et fortement contrastées. Elle permet de contrôler les fonctions essentielles de la télévision (allumer/éteindre, volume, changement de chaîne) sans s’encombrer des nombreuses petites touches inutiles des télécommandes standard.",
-          "instructions": [
-            "Appuyer sur le bouton pour changer de chaine"
-          ],
           "activity": {
             "title": "Test des boutons",
             "instructions": "Prenez en main la télécommande et observez les différentes fonctionnalités utilisables. "
@@ -506,13 +429,9 @@
           "id": "",
           "name": "Jeux de dame",
           "image": "./images/dame.jpg",
-          "category": "Non technologique ",
           "location": "Dans le salon",
           "price": "120 €",
           "description": "Les jeux adaptés permettent de retrouver ou de maintenir le plaisir de jouer malgré des troubles visuels ou une imprécision du geste. Le plateau dont chacune des 64 cases est percée en son centre pour le positionnement des pièces permet de les distinguer tactilement, l’ensemble des pions possèdent un picot sous leur base afin de les positionner sur le plateau.",
-          "instructions": [
-            "Jouer directement avec ou sans lunettes "
-          ],
           "activity": {
             "title": "Jeu de la dame",
             "instructions": "Prenez le temps de jouer aux dames en simulant des coups en utilisant des lunettes de simulation basse vision si vous le souhaitez."
@@ -533,14 +452,9 @@
           "id": "",
           "name": "Loupe manuelle",
           "image": "./images/loupe.jpg",
-          "category": "Non technologique",
           "location": "Salon sur le bureau",
           "price": "115 €",
           "description": "La loupe manuelle permet de grossir les caractères d’un texte pour en faciliter la lecture. Le grossissement est de x4 sur ce modèle et il permet d'allumer une lumière.\n",
-          "instructions": [
-            "utiliser la loupe ",
-            "allumer la lumière si désiré"
-          ],
           "activity": {
             "title": "Grossissement ",
             "instructions": "Prendre un magazine et lire un article en utilisant la loupe pour grossir le texte. Vous pouvez utiliser la lumière pour rendre la lecture plus agréable."
@@ -567,14 +481,9 @@
           "id": "",
           "name": "Thermomètre parlant",
           "image": "./images/thermometre.jpg",
-          "category": "Non technologique",
           "location": "Dans la salle de bain",
           "price": "18 €",
           "description": "Le thermomètre parlant permet d’avoir un retour vocal de la mesure de température prise. Prise buccale et axillaire possible. il y a un bouton bleu On/Off et un bouton jaune plus petit pour le retour vocal.",
-          "instructions": [
-            "Cliquez sur le bouton bleu On/Off pour démarrer le thermomètre ",
-            "Pressez le bouton jaune pour le retour vocal"
-          ],
           "activity": {
             "title": "Chaleur ? ",
             "instructions": "Prendre sa température : appuyez sur le bouton bleu On/Off pour allumer le thermomètre, puis placez-le sans contact direct avec la peau (pour des raisons d’hygiène). Enfin, appuyez sur le bouton jaune pour obtenir le retour vocal de la mesure."
@@ -595,15 +504,9 @@
           "id": "",
           "name": "Tensiomètre parlant",
           "image": "./images/tensiometre.jpg",
-          "category": "Non technologique",
           "location": "Dans la chambre",
           "price": "55 €",
           "description": "Le tensiomètre parlant mesure de la tension artérielle et le pouls de manière entièrement automatisée au niveau du bras. Il annonce la mesure vocalement.",
-          "instructions": [
-            "Enfiler le brassard",
-            "appuyer sur Start ",
-            "rester immobile jusqu'à l'annonce du résultat."
-          ],
           "activity": {
             "title": "Prise de tension",
             "instructions": "Enfilez le brassard autour de votre bras sans vêtement, appuyez sur start (cela peut serrer fortement) restez immobile jusqu'à l'annonce du résultat."
@@ -624,14 +527,9 @@
           "id": "",
           "name": "Applications d'aide à la lecture",
           "image": "./images/be_my_eyes.jpg",
-          "category": "Technologique",
           "location": "Sur un téléphone ou sur la tablette ",
           "price": "0 €",
           "description": "SEEING ALL / LOOKOUT / BE MY EYES sont des applications utilisant l'IA pour lire un document qui leur est présenté en photographie. Elles sont capables, selon les applications, de décrire par commande vocale le contexte du document.",
-          "instructions": [
-            "Installer l'application",
-            "Prendre en photo le document à lire"
-          ],
           "activity": {
             "title": "Lecture d'une notice",
             "instructions": "En utilisant la tablette du TASDA, prenez en photo une notice de médicament pour que l'application vous la lise vocalement."
@@ -652,14 +550,9 @@
           "id": "",
           "name": "Lecteur d'étiquette parlant - PenFriend",
           "image": "./images/penfriend.jpg",
-          "category": "Non Technologique",
           "location": "Dans la cuisine",
           "price": "140 €",
           "description": "Le lecteur d’étiquettes parlant permet d’identifier tous les objets de la vie quotidienne (médicaments, boîtes de conserve ...) On place une étiquette sur l’objet puis on enregistre un message audio correspondant. Lorsqu’on posera le lecteur sur l’étiquette, on entendra le message.",
-          "instructions": [
-            "Allumer le stylo PenFriend.",
-            "Le placer sur l'étiquette placée en amont et écouter le message préenregistré "
-          ],
           "activity": {
             "title": "Connaitre le pilulier",
             "instructions": "Prendre le pilulier ainsi que le stylo, allumer le stylo et lire une des cases du pilulier en plaçant le stylo sur une des étiquettes. "
@@ -686,13 +579,9 @@
           "id": "",
           "name": "Réveil parlant ",
           "image": "./images/reveil.jpg",
-          "category": "Non technologique ",
           "location": "Dans la chambre sur la table de nuit ",
           "price": "37 €",
           "description": "Le réveil parlant permet d’avoir une indication vocale de l’heure sur pression d’un bouton ou automatiquement à heure fixe.",
-          "instructions": [
-            "Appuyer sur le bouton au dessus du réveil pour lancer la lecture orale de l'heure "
-          ],
           "activity": {
             "title": "Quelle heure est-il ? ",
             "instructions": "Appuyez sur le bouton au dessus du réveil pour lancer la lecture orale de l'heure. "
@@ -713,13 +602,9 @@
           "id": "",
           "name": "Montre parlante",
           "image": "./images/montre.jpg",
-          "category": "Non technologique",
           "location": "Dans la chambre sur la table de nuit ",
           "price": "30 €",
           "description": "La montre parlante permet d’avoir une indication vocale de l’heure sur pression d’un bouton ou selon le modèle automatiquement à heure fixe.",
-          "instructions": [
-            "Indication vocale de l’heure sur pression d’un bouton à gauche de la molette pour changer l'heure."
-          ],
           "activity": {
             "title": "Quelle heure est-il ?",
             "instructions": "Mettre la montre et presser le bouton qui est à gauche de la molette pour changer l'heure pour activer la commande vocale."
@@ -740,14 +625,9 @@
           "id": "",
           "name": "Assistant vocal Google Home",
           "image": "./images/assistant.jpg",
-          "category": "Technologique",
           "location": "Dans la chambre sur la table de nuit ",
           "price": "A partir de 60 €",
           "description": "Un assistant vocal est un logiciel qui utilise des commandes vocales pour effectuer des tâches, répondre à des questions ou contrôler des appareils. Il peut permettre de gérer à distance, par la voix, des objets connectés. Ici, il peut servir à activer plusieurs objets dans l'appartement, faire une liste de course ou de tâches.",
-          "instructions": [
-            "Dire \"ok google\" ",
-            "Demander d'ajouter des éléments à sa liste de course"
-          ],
           "activity": {
             "title": "Liste de course",
             "instructions": "Dire \"ok google\" puis demandez d'ajouter des éléments à votre liste de course. "

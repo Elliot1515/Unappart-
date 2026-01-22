@@ -14,7 +14,7 @@ const DATA_FILE = path.join(__dirname, "data.json");
 // Note : Sur Render gratuit, les images uploadées ici disparaîtront au redémarrage
 const IMAGES_DIR = path.join(__dirname, "../public/main/images");
 
-const ADMIN_PASSWORD = "ensc";
+const ADMIN_PASSWORD = "TASDA38!";
 
 // --- 1. SERVIR LE SITE WEB (Frontend) ---
 // Sert le dossier "public/main" (index.html, script.js...) à la racine du site
