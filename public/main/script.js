@@ -29,7 +29,6 @@ const quizProgressFill = document.getElementById("quizProgressFill");
 // --- CHARGEMENT DES DONNÉES ---
 async function loadAppData() {
   try {
-    // MODIFICATION IMPORTANTE : Lien relatif
     const response = await fetch("/api/data");
     const data = await response.json();
 
@@ -164,12 +163,19 @@ function updateThemeCards() {
 function showThemeIntroduction(themeKey) {
   const theme = appToolsData[themeKey];
   const screen = document.getElementById("themeIntroduction");
+
+  // ICI : On génère le bouton RETOUR et le bouton DÉCOUVRIR
+  // Grâce au padding CSS ajouté, ils ne seront plus cachés.
   screen.innerHTML = `
-        <div class="tool-content"><h2 class="activity-title">${theme.title}</h2><p>${theme.description || ""}</p></div>
+        <div class="tool-content">
+            <h2 class="activity-title">${theme.title}</h2>
+            <p>${theme.description || ""}</p>
+        </div>
         <div class="screen-navigation">
-            <button class="nav-button" onclick="showScreen('themeSelection')">Retour</button>
+            <button class="nav-button" onclick="showScreen('themeSelection')">Retour aux thèmes</button>
             <button class="nav-button primary" id="startVisit">Découvrir</button>
         </div>`;
+
   document.getElementById("startVisit").onclick = () => {
     filteredTools = theme.tools;
     currentToolIndex = 0;
@@ -188,6 +194,7 @@ function showTool(index) {
     toolContent.innerHTML = `
             <div class="tool-details">
                 <h2 class="activity-title">${tool.name}</h2>
+                <div class="tag">${tool.category}</div>
                 ${imageHtml}
                 <p><strong>📍 Emplacement :</strong> ${tool.location}</p>
                 <div class="tool-description-section"><p>${tool.description}</p></div>
