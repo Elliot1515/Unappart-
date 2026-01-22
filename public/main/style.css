@@ -81,6 +81,7 @@ h2 {
 }
 
 .nav-button {
+    margin-right: 5rem;
     background-color: var(--high-contrast-link);
     color: white;
     border: none;
@@ -523,7 +524,3 @@ h2 {
     line-height: 1.5;
 }
 
-/* --- NOUVEAU : MARGE DEMANDÉE SUR LES BOUTONS D'ACTION À DROITE --- */
-#startVisit, #foundTool, #nextTool {
-    margin-right: 10px;
-}

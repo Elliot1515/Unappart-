@@ -200,7 +200,7 @@ function showTool(index) {
   }
   document.querySelector("#toolDescription .screen-navigation").innerHTML = `
         <button class="nav-button" onclick="prevTool()">Précédent</button>
-        <button class="nav-button primary" onclick="goToActivity()">J'ai l'outil en main</button>`;
+        <button class="nav-button primary" id="foundTool" onclick="goToActivity()">J'ai l'outil en main</button>`;
   setTimeout(readScreenContent, 200);
 }
 
