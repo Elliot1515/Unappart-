@@ -164,8 +164,6 @@ function showThemeIntroduction(themeKey) {
   const theme = appToolsData[themeKey];
   const screen = document.getElementById("themeIntroduction");
 
-  // ICI : On génère le bouton RETOUR et le bouton DÉCOUVRIR
-  // Grâce au padding CSS ajouté, ils ne seront plus cachés.
   screen.innerHTML = `
         <div class="tool-content">
             <h2 class="activity-title">${theme.title}</h2>
@@ -194,7 +192,6 @@ function showTool(index) {
     toolContent.innerHTML = `
             <div class="tool-details">
                 <h2 class="activity-title">${tool.name}</h2>
-                <div class="tag">${tool.category}</div>
                 ${imageHtml}
                 <p><strong>📍 Emplacement :</strong> ${tool.location}</p>
                 <div class="tool-description-section"><p>${tool.description}</p></div>
@@ -255,7 +252,20 @@ function setupActivity(tool) {
   const nextBtn = document.getElementById("nextTool");
   if (nextBtn) {
     nextBtn.classList.remove("hidden");
-    nextBtn.onclick = nextTool;
+
+    // --- MODIFICATION ICI : Gestion du dernier outil ---
+    // Si on est au dernier outil du tableau
+    if (currentToolIndex >= filteredTools.length - 1) {
+      nextBtn.textContent = "Voir les thèmes"; // Changement du texte
+      nextBtn.onclick = () => {
+        speakText("Visite terminée. Retour au menu des thèmes.");
+        showScreen("themeSelection");
+      };
+    } else {
+      // Sinon comportement normal
+      nextBtn.textContent = "Outil suivant";
+      nextBtn.onclick = nextTool;
+    }
   }
 }
 
@@ -276,6 +286,7 @@ function nextTool() {
     showTool(currentToolIndex);
     showScreen("toolDescription");
   } else {
+    // Sécurité supplémentaire (ne devrait plus être appelé grâce au changement dans setupActivity)
     speakText("Visite terminée. Retour au menu.");
     showScreen("themeSelection");
   }

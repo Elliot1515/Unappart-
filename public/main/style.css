@@ -29,10 +29,6 @@ body {
     font-size: calc(1.5rem * var(--text-scale)); 
     max-width: 100vw;
     overflow-x: hidden;
-    
-    /* --- MODIFICATION IMPORTANTE ICI --- */
-    /* On ajoute un gros espace en bas pour que les boutons A+/A- ne cachent jamais le contenu */
-    padding-bottom: 150px; 
 }
 
 /* Important pour que les boutons/inputs héritent de la taille agrandie */
@@ -212,14 +208,14 @@ h2 {
     overflow-y: auto;
 }
 
-/* --- MODIFICATION ICI : BOUTONS ACCESSIBILITÉ --- */
+/* BOUTONS ACCESSIBILITÉ */
 .accessibility-controls {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
-    z-index: 1000; /* S'assure qu'ils sont au-dessus */
+    z-index: 1000; 
 }
 
 .accessibility-button {
@@ -228,16 +224,13 @@ h2 {
     border: none;
     border-radius: 50%;
     
-    /* Taille fluide basée sur le text-scale */
     width: auto;
     height: auto;
     min-width: 60px;
     min-height: 60px;
     padding: 15px;
-    
     margin: 0.25rem;
     
-    /* La taille du logo/texte augmente avec le zoom */
     font-size: calc(1.8rem * var(--text-scale)); 
     
     cursor: pointer;
@@ -252,7 +245,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si besoin */
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -528,4 +521,9 @@ h2 {
 .texte-dynamique {
     font-size: calc(1rem * var(--text-scale));
     line-height: 1.5;
+}
+
+/* --- NOUVEAU : MARGE DEMANDÉE SUR LES BOUTONS D'ACTION À DROITE --- */
+#startVisit, #foundTool, #nextTool {
+    margin-right: 10px;
 }
