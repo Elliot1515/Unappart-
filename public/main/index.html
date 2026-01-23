@@ -66,7 +66,8 @@
             </div>
             
             <div class="screen-navigation">
-                <button class="nav-button" data-target="welcomeScreen">Annuler et Retour</button>
+                <button class="nav-button" onclick="prevQuestion()">Retour</button>
+                <button class="nav-button" data-target="welcomeScreen">Annuler</button>
             </div>
         </div>
 
@@ -88,7 +89,7 @@
             </div>
             
             <div class="screen-navigation">
-                <button class="nav-button" data-target="themeIntroduction">Retour</button> 
+                <button class="nav-button" onclick="prevTool()">Retour</button> 
                 <button class="nav-button" id="foundTool">J'ai trouvé cet outil</button>
             </div>
         </div>
@@ -101,7 +102,7 @@
             </div>
 
             <div class="screen-navigation">
-                <button class="nav-button" data-target="themeSelection">Nouveau thème</button>
+                <button class="nav-button" onclick="showScreen('toolDescription')">Retour</button>
                 <button class="nav-button" id="nextTool">Outil suivant</button>
             </div>
         </div>

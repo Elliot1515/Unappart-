@@ -81,7 +81,7 @@ h2 {
 }
 
 .nav-button {
-    margin-right: 5rem;
+    margin-right: 4rem !important;
     background-color: var(--high-contrast-link);
     color: white;
     border: none;

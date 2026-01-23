@@ -109,6 +109,17 @@ function loadQuestion(index) {
   }
 }
 
+// --- NOUVELLE FONCTION : RETOUR QUESTION PRÉCÉDENTE ---
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion(currentQuestionIndex);
+  } else {
+    // Si on est à la première question, on retourne à l'accueil
+    showScreen("welcomeScreen");
+  }
+}
+
 function handleAnswer(questionIndex, answer) {
   const q = appQuizQuestions[questionIndex];
   const optionIndex = q.options.indexOf(answer);
@@ -170,8 +181,8 @@ function showThemeIntroduction(themeKey) {
             <p>${theme.description || ""}</p>
         </div>
         <div class="screen-navigation">
-            <button class="nav-button" onclick="showScreen('themeSelection')">Retour aux thèmes</button>
-            <button class="nav-button primary" id="startVisit">Découvrir</button>
+            <button class="nav-button" onclick="showScreen('themeSelection')">Retour</button>
+            <button class="nav-button primary" id="startVisit">Commencer</button>
         </div>`;
 
   document.getElementById("startVisit").onclick = () => {
@@ -253,16 +264,14 @@ function setupActivity(tool) {
   if (nextBtn) {
     nextBtn.classList.remove("hidden");
 
-    // --- MODIFICATION ICI : Gestion du dernier outil ---
-    // Si on est au dernier outil du tableau
+    // Gestion du dernier outil pour changer le texte du bouton si nécessaire
     if (currentToolIndex >= filteredTools.length - 1) {
-      nextBtn.textContent = "Voir les thèmes"; // Changement du texte
+      nextBtn.textContent = "Voir les thèmes";
       nextBtn.onclick = () => {
         speakText("Visite terminée. Retour au menu des thèmes.");
         showScreen("themeSelection");
       };
     } else {
-      // Sinon comportement normal
       nextBtn.textContent = "Outil suivant";
       nextBtn.onclick = nextTool;
     }
@@ -286,7 +295,6 @@ function nextTool() {
     showTool(currentToolIndex);
     showScreen("toolDescription");
   } else {
-    // Sécurité supplémentaire (ne devrait plus être appelé grâce au changement dans setupActivity)
     speakText("Visite terminée. Retour au menu.");
     showScreen("themeSelection");
   }
