@@ -182,7 +182,7 @@ function showThemeIntroduction(themeKey) {
         </div>
         <div class="screen-navigation">
             <button class="nav-button" onclick="showScreen('themeSelection')">Retour</button>
-            <button class="nav-button primary" id="startVisit">Commencer</button>
+            <button class="nav-button primary" id="startVisit">Découvrir</button>
         </div>`;
 
   document.getElementById("startVisit").onclick = () => {
@@ -210,7 +210,7 @@ function showTool(index) {
             </div>`;
   }
   document.querySelector("#toolDescription .screen-navigation").innerHTML = `
-        <button class="nav-button" onclick="prevTool()">Précédent</button>
+        <button class="nav-button" onclick="prevTool()">Outil précédent</button>
         <button class="nav-button primary" id="foundTool" onclick="goToActivity()">J'ai l'outil en main</button>`;
   setTimeout(readScreenContent, 200);
 }
